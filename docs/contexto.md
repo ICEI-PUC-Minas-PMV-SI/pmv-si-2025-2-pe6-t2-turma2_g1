@@ -16,10 +16,10 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Objetivo Geral:
+### Objetivo Geral:
 Desenvolver uma plataforma de e-commerce escalável, voltada para o modelo B2B, para a comercialização de itens eletrônicos de uma única marca, com suporte a múltiplos servidores e gerenciamento de estoque distribuído.
 
-Objetivos Específicos:
+### Objetivos Específicos:
     1. Implementar um sistema de controle de estoque em tempo real, sincronizado em servidores distribuídos.
     2. Oferecer relatórios gerenciais detalhados sobre pedidos, clientes e movimentação de estoque.
     3. Garantir escalabilidade e alta disponibilidade por meio de arquitetura distribuída.
