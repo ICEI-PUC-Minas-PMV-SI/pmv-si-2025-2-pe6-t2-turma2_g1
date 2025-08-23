@@ -1,6 +1,7 @@
 # Introdução
-
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O presente projeto tem como objetivo o desenvolvimento de uma plataforma de E-commerce escalável voltada para o modelo B2B (Business to Business). O sistema busca atender empresas parceiras na aquisição de itens eletrônicos, como memória RAM, placas de vídeo, teclados, mouses e headsets, todos de uma única marca, garantindo padronização e controle da qualidade.
+O contexto de criação deste projeto parte da necessidade crescente de empresas adquirirem insumos de tecnologia de forma rápida, confiável e automatizada, diante da evolução do mercado digital e da competitividade no setor de eletrônicos.
+Dessa forma, este trabalho tem como objetivo desenvolver um sistema robusto e escalável, que permita atender múltiplas demandas de clientes corporativos, oferecendo facilidade na gestão de pedidos, controle de estoque e escalabilidade em servidores distribuídos.
 
 ## Problema
 Atualmente, muitas empresas encontram dificuldades na aquisição de equipamentos eletrônicos em larga escala devido à escassez de plataformas de e-commerce voltadas especificamente para esse segmento. A maioria dos sistemas existentes é direcionada ao consumidor final ou que não contempla as necessidades particulares das empresas no processo de compra corporativa. Esse cenário gera alguns problemas como a ausência de padronização nos produtos, dificuldades na negociação em volume e processos pouco adaptados às demandas de empresas que necessitam de agilidade, previsibilidade e controle de estoque.
