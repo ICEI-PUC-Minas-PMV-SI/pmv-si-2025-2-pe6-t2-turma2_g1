@@ -15,7 +15,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Rafael Moreira Arantes de Castro
 * Sophia Thaís Gibim Coelho
 * Nathan de Mesquita dos Santos
-* Nome completo do aluno 6
+* Ian Benevides de Abreu
 
 ## Orientador
 
