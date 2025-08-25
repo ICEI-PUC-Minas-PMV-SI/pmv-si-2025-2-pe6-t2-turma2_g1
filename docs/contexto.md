@@ -30,16 +30,48 @@ O projeto também será uma oportunidade de aprofundar o estudo em arquitetura d
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo da plataforma são empresas de médio e grande porte, localizadas no Brasil, que dependem de tecnologia para suas operações principais e necessitam adquirir equipamentos eletrônicos de forma padronizada e em volume.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+O perfil dessas empresas é caracterizado pela busca de eficiência operacional, controle de custos e padronização tecnológica. Elas enfrentam o desafio de encontrar fornecedores B2B especializados, que ofereçam um processo de compra ágil, negociação em volume e previsibilidade de estoque, fugindo da complexidade e da falta de foco das plataformas de varejo tradicionais.
+### Persona 1 – Carlos
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+**Profissão** - Gerente de Compras
+
+**Detalhes Pessoais:**
+- Localização: São Paulo/SP
+- Nível educacional: Superior Completo em Admnistração com MBA em Gestão de Suprimentos.
+
+**Carreira:**
+- Responsabilidades profissionais: Analisa requisições de compra, negocia com fornecedores, faz cotações, emite pedidos, acompanha entregas e gerencia o orçamento do setor. Passa boa parte do tempo em planilhas e sistemas de gestão.
+- Objetivos: Otimizar o processo de aquisição, reduzir os custos de suprimentos no próximo ano e encontrar fornecedores confiáveis que padronizem os equipamentos da empresa.
+- Desafios: Perder tempo com processos manuais e burocráticos; lidar com fornecedores que não cumprem prazos; falta de padronização de equipamentos que gera problemas para a equipe de TI e aumenta os custos de manutenção.
+---
+
+### Persona 2 – Ana
+
+**Profissão** - Coordenadora de Infraestrutura de TI
+
+**Detalhes Pessoais:**
+- Localização: Florianópolis/SC
+- Nível educacional: Superior Completo com Pós Graduação em Administração de Emperesas
+
+**Carreira:**
+- Responsabilidades profissionais: Gerencia servidores, garante a segurança da rede, planeja a expansão da capacidade tecnológica da empresa, dá suporte técnico à equipe e define as especificações dos equipamentos a serem comprados.
+- Objetivos: Garantir 99.9% de uptime dos sistemas, implementar novas tecnologias que melhorem a performance da equipe e manter a infraestrutura de TI escalável para acompanhar o crescimento da empresa sem gargalos.
+- Desafios: Equipamentos de baixa qualidade que causam falhas e retrabalho; falta de informações técnicas detalhadas nos sites dos fornecedores; dificuldade em comprar equipamentos padronizados em lote, o que complica a manutenção e o gerenciamento.
+---
+### Persona 3 – Marcos
+
+**Profissão** - Coordenador de Logística e Operações
+
+**Detalhes Pessoais:**
+- Localização: Curitiba/PR
+- Nível educacional: Superior Completo em Logística.
+
+**Carreira:**
+- Responsabilidades profissionais: Recebe e confere a mercadoria, guarda no estoque e entrega os produtos para as equipes da empresa que pedem.
+- Objetivos: Manter o estoque 100% correto e entregar os materiais o mais rápido possível para quem precisa.
+- Desafios: Lidar com entregas que chegam erradas ou atrasadas e a burocracia para resolver esses problemas.
 
 # Especificações do Projeto
 
