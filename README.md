@@ -14,7 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Helberth Alencar Diniz Martins
 * Rafael Moreira Arantes de Castro
 * Sophia Thaís Gibim Coelho
-* Nome completo do aluno 5
+* Nathan de Mesquita dos Santos
 * Nome completo do aluno 6
 
 ## Orientador
