@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# E Commerce nome a definir
 
 `CURSO: Sistemas de Informação`
 
@@ -6,7 +6,9 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em desenvolvimento trata-se de uma plataforma de e-commerce B2B especializada na comercialização de equipamentos eletrônicos de uma única marca, voltada para atender empresas de médio e grande porte. O sistema será escalável, com arquitetura distribuída e controle de estoque em tempo real, visando oferecer uma solução eficiente, confiável e automatizada para o processo de aquisição corporativa. A proposta busca suprir uma lacuna no mercado, que carece de plataformas focadas nas necessidades específicas de compras em volume, com padronização de produtos, geração automática de documentos fiscais, relatórios gerenciais e suporte a múltiplos dispositivos.
+
+Com foco na escalabilidade, a aplicação será capaz de operar em servidores distribuídos, garantindo alta disponibilidade e desempenho mesmo diante de um grande número de usuários simultâneos. Além disso, será desenvolvida uma interface intuitiva e responsiva, voltada para facilitar a rotina dos profissionais de compras, TI e logística das empresas-clientes, otimizando processos e reduzindo custos operacionais.
 
 ## Integrantes
 
