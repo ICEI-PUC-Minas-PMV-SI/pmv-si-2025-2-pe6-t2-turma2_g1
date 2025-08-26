@@ -158,6 +158,7 @@ Atualizado em: 25/08/2025
 | Nathan       | Público Alvo  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
 | Ian     | Requisitos Funcionais  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
 | Helberth     | Requisitos não Funcionais  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
+| Ian     | Arquitetura de Solução  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
 
 Para utilização posteiormente
 | Aluno W    | Problema    | 18/08/2025     | 25/08/2025 | 📝    |                 |
