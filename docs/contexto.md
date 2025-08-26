@@ -1,5 +1,4 @@
 # Introdução
-O presente projeto tem como objetivo o desenvolvimento de uma plataforma de E-commerce escalável voltada para o modelo B2B (Business to Business). O sistema busca atender empresas parceiras na aquisição de itens eletrônicos, como memória RAM, placas de vídeo, teclados, mouses e headsets, todos de uma única marca, garantindo padronização e controle da qualidade.
 O contexto de criação deste projeto parte da necessidade crescente de empresas adquirirem insumos de tecnologia de forma rápida, confiável e automatizada, diante da evolução do mercado digital e da competitividade no setor de eletrônicos.
 Dessa forma, este trabalho tem como objetivo desenvolver um sistema robusto e escalável, que permita atender múltiplas demandas de clientes corporativos, oferecendo facilidade na gestão de pedidos, controle de estoque e escalabilidade em servidores distribuídos.
 
