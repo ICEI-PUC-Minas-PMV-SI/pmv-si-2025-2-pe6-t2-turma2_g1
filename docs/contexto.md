@@ -146,16 +146,25 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
+### Semana 1 (18/08/2025 à 25/08/2025)
 
-Atualizado em: 21/04/2024
+Atualizado em: 25/08/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Sophia        | Introdução | 18/08/2025     | 25/08/2025 | ✔️    | 21/08/2025      |
+| Vitória        | Problema    | 18/08/2025     | 25/08/2025 | ✔️   |   21/08/2025      |
+| Rafael        | Objetivos  | 18/08/2025     | 25/08/2025 | ✔️     |  21/08/2025       |
+| Helberth        | Justificativa  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
+| Nathan       | Público Alvo  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
+| Ian     | Requisitos Funcionais  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
+| Helberth     | Requisitos não Funcionais  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
+
+Para utilização posteiormente
+| Aluno W    | Problema    | 18/08/2025     | 25/08/2025 | 📝    |                 |
+| AlunoY      | Histórias de usuário  | 01/01/2024   | 07/01/2005 | ⌛     |                 |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+
 
 #### Semana 2
 
