@@ -1,4 +1,4 @@
-# E Commerce nome a definir
+# E-Commerce Hipium
 
 `CURSO: Sistemas de Informação`
 
