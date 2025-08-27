@@ -166,7 +166,7 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
+Apresentação da divisão de tarefas entre os integrantes da equipe e o acompanhamento/monitoramento da execução:
 
 ### Semana 1 (18/08/2025 à 25/08/2025)
 
@@ -183,22 +183,23 @@ Atualizado em: 25/08/2025
 | Helberth     | Requisitos não Funcionais  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
 | Ian     | Arquitetura de Solução  |    18/08/2025  | 25/08/2025 | ✔️    |  21/08/2025   |
 
-Para utilização posteiormente
-| Aluno W    | Problema    | 18/08/2025     | 25/08/2025 | 📝    |                 |
-| AlunoY      | Histórias de usuário  | 01/01/2024   | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
+### Semana 2 (25/08/2025 à 31/08/2025)
 
-#### Semana 2
-
-Atualizado em: 21/04/2024
+Atualizado em: 25/08/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Helberth        | Correções da 1ª Semana  |    25/08/2025  | 31/08/2025 | ✔️    |  31/08/2025   |
+| Helberth        | Adequação Requisitos Funcionais |    25/08/2025  | 31/08/2025 | ✔️    |  28/08/2025   |
+| Sophia        | Catálogo de Serviços | 25/08/2025     | 31/08/2025 | ✔️    | 28/08/2025      |
+| Vitória        | Tecnologias Utilizadas    | 25/08/2025     | 31/08/2025 | ✔️   |   28/08/2025      |
+| Rafael        | Restrições | 25/08/2025     | 31/08/2025 | ✔️     |  28/08/2025       |
+| Helberth        | Planejamento  |    25/08/2025  | 31/08/2025 | ✔️    |  31/08/2025   |
+| Nathan       | Hospedagem  |    25/08/2025  | 31/08/2025 | ✔️    |  28/08/2025   |
+| Ian     | Arquitetura de Solução |    25/08/2025  | 31/08/2025 | ✔️    |  28/08/2025   |
+
+
 
 Legenda:
 - ✔️: terminado
