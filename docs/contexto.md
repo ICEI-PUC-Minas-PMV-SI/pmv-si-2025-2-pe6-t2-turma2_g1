@@ -137,6 +137,26 @@ Definição de como o software é estruturado em termos dos componentes que faze
 * Banco de Dados: MySQL
 * Ambiente de Desenvolvimento (IDE) : Visual Studio Code
 
+### Fluxo de Interação do Usuário no E-commerce:
+Um breve contexto de como o usuário interage com o sistema e como as tecnologias se conectam nesse processo
+
+1. O usuário acessa o sistema pela interface web (React.js) ou pelo app mobile (React Native, que segue a mesma lógica).
+
+2. Ele realiza ações como login, busca de produtos, adicionar ao carrinho, finalizar compra.
+
+3. Quando o usuário interage, o frontend envia uma requisição pela REST API para o backend
+
+4. O backend interpreta a requisição e consulta ou grava informações no MySQL como por exemplo buscar produtos, registrar de pedidos e carrinho, etc
+
+5. O MySQL responde ao backend com os dados solicitados.
+
+6. O Node.js organiza essa resposta em formato JSON e a envia de volta para o frontend via REST API.
+
+7. O frontend recebe os dados (exemplo: lista de produtos ou confirmação de compra).
+
+8. A interface é atualizada de forma interativa e dinâmica, garantindo boa experiência ao usuário.
+
+
 
 ## Hospedagem
 
