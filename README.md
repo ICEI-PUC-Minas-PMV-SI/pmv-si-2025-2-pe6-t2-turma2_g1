@@ -1,4 +1,4 @@
-# E-Commerce Hipium
+# PIUMHI E-COMMERCE
 
 `CURSO: Sistemas de Informação`
 
