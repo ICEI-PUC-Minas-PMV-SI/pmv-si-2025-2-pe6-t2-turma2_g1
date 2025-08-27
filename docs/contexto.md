@@ -160,7 +160,21 @@ Um breve contexto de como o usuário interage com o sistema e como as tecnologia
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A princípio, a aplicação foi projetada com uma arquitetura baseada em Docker Compose, garantindo portabilidade, escalabilidade inicial e simplicidade no gerenciamento dos serviços. Ela é composta por três principais componentes:
+ 
+Backend: API REST construída com Flask.
+ 
+Banco de Dados: MySQL.
+ 
+Frontend: Interface web desenvolvida com React.js
+ 
+**Opções de Hospedagem:**
+
+Frontend: Vercel
+
+Backend: AWS EC2 ou ECS/Fargate
+ 
+A hospedagem foi pensada para ser simples, utilizando serviços gratuitos ou de baixo custo, mas que permitam evolução futura para ambientes mais robustos.
 
 # Planejamento
 
