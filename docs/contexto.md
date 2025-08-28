@@ -121,7 +121,16 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+1. Gestão Corporativa de Usuários-> Descrição: Cadastro, autenticação e gerenciamento de contas empresariais com base em CNPJ; Funcionalidades: Criação de contas com validação de e-mail corporativo, permissão para criação de múltiplos usuários internos (ex: comprador, gestor, TI), controle de acesso com níveis de permissão (admin, operador, visualizador).
+2. Catálogo de Produtos Padronizados-> Descrição: Disponibilização de produtos eletrônicos de uma única marca com especificações técnicas detalhadas; Funcionalidades: Filtros avançados por categoria, compatibilidade e desempenho, visualização de fichas técnicas e documentação em PDF.
+3. Compra Corporativa em Lote com Checkout Personalizado-> Descrição: Carrinho de compras adaptado para pedidos de grande volume com regras comerciais específicas; Funcionalidades: Adição de múltiplos produtos com controle de quantidades, resumo de pedido com CNPJ, centro de custo, checkout.
+4. Gestão de Estoque em Tempo Real (Distribuído)-> Descrição: Controle automatizado do estoque com atualização imediata após cada venda; Funcionalidades: Visualização do estoque disponível por região ou centro de distribuição, alertas de baixo estoque e previsão de reposição.
+5. Relatórios Gerenciais-> Descrição: Geração de relatórios completos para análise e tomada de decisão. Funcionalidades: Relatórios por período, CNPJ, categoria de produto, centro de custo, Exportação em PDF e Excel, Dashboards com indicadores de volume de compras, entrega e estoque.
+6. Histórico de Pedidos Corporativos-> Descrição: Registro completo de todos os pedidos feitos por empresa e por usuário; Funcionalidades: Consulta com filtros por período, categoria, status de entrega, Visualização de cada item do pedido.
+7. Plataforma Responsiva e Multidispositivo-> Descrição: Interface amigável que se adapta a dispositivos móveis e desktops; Funcionalidades: Layout intuitivo para smartphones, tablets e computadores. Experiência fluida em diferentes navegadores e sistemas operacionais.
+8. Suporte à Escalabilidade com Arquitetura Distribuída-> Descrição: A plataforma será construída para suportar aumento de usuários e pedidos sem perda de desempenho. Funcionalidades: Hospedagem em servidores escaláveis (cloud). Balanceamento de carga automático.
+9. Segurança e Conformidade-> Descrição: Proteção de dados e processos com base nas melhores práticas de segurança digital; Funcionalidades: Autenticação com senha forte (mínimo de 8 caracteres, letras, números e símbolos). Verificação de e-mail. Restrições à coleta de dados sensíveis (exclusivamente dados empresariais).
+10. Atendimento e Suporte Especializado B2B-> Descrição: Canal exclusivo para suporte a empresas, com equipe técnica treinada; Funcionalidades: Atendimento via chat, e-mail e telefone em horário comercial estendido. SLA definido para resolução de problemas técnicos e operacionais.
 
 # Arquitetura da Solução
 
