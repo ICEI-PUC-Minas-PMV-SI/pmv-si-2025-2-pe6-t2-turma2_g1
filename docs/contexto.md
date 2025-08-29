@@ -164,7 +164,7 @@ Um breve contexto de como o usuário interage com o sistema e como as tecnologia
 
 A princípio, a aplicação foi projetada com uma arquitetura baseada em Docker Compose, garantindo portabilidade, escalabilidade inicial e simplicidade no gerenciamento dos serviços. Ela é composta por três principais componentes:
  
-Backend: API REST construída com Flask.
+Backend: API REST construída com Node.js.
  
 Banco de Dados: MySQL.
  
