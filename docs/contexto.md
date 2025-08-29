@@ -114,17 +114,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-1. Gestão Corporativa de Usuários-> Descrição: Cadastro, autenticação e gerenciamento de contas empresariais com base em CNPJ; Funcionalidades: Criação de contas com validação de e-mail corporativo, permissão para criação de múltiplos usuários internos (ex: comprador, gestor, TI), controle de acesso com níveis de permissão (admin, operador, visualizador).
-2. Catálogo de Produtos Padronizados-> Descrição: Disponibilização de produtos eletrônicos de uma única marca com especificações técnicas detalhadas; Funcionalidades: Filtros avançados por categoria, compatibilidade e desempenho, visualização de fichas técnicas e documentação em PDF.
-3. Compra Corporativa em Lote com Checkout Personalizado-> Descrição: Carrinho de compras adaptado para pedidos de grande volume com regras comerciais específicas; Funcionalidades: Adição de múltiplos produtos com controle de quantidades, resumo de pedido com CNPJ, centro de custo, checkout.
-4. Gestão de Estoque em Tempo Real (Distribuído)-> Descrição: Controle automatizado do estoque com atualização imediata após cada venda; Funcionalidades: Visualização do estoque disponível por região ou centro de distribuição, alertas de baixo estoque e previsão de reposição.
-5. Relatórios Gerenciais-> Descrição: Geração de relatórios completos para análise e tomada de decisão. Funcionalidades: Relatórios por período, CNPJ, categoria de produto, centro de custo, Exportação em PDF e Excel, Dashboards com indicadores de volume de compras, entrega e estoque.
-6. Histórico de Pedidos Corporativos-> Descrição: Registro completo de todos os pedidos feitos por empresa e por usuário; Funcionalidades: Consulta com filtros por período, categoria, status de entrega, Visualização de cada item do pedido.
-7. Plataforma Responsiva e Multidispositivo-> Descrição: Interface amigável que se adapta a dispositivos móveis e desktops; Funcionalidades: Layout intuitivo para smartphones, tablets e computadores. Experiência fluida em diferentes navegadores e sistemas operacionais.
-8. Suporte à Escalabilidade com Arquitetura Distribuída-> Descrição: A plataforma será construída para suportar aumento de usuários e pedidos sem perda de desempenho. Funcionalidades: Hospedagem em servidores escaláveis (cloud). Balanceamento de carga automático.
-9. Segurança e Conformidade-> Descrição: Proteção de dados e processos com base nas melhores práticas de segurança digital; Funcionalidades: Autenticação com senha forte (mínimo de 8 caracteres, letras, números e símbolos). Verificação de e-mail. Restrições à coleta de dados sensíveis (exclusivamente dados empresariais).
-10. Atendimento e Suporte Especializado B2B-> Descrição: Canal exclusivo para suporte a empresas, com equipe técnica treinada; Funcionalidades: Atendimento via chat, e-mail e telefone em horário comercial estendido. SLA definido para resolução de problemas técnicos e operacionais.
+O e-commerce foi desenvolvido para proporcionar ao cliente uma experiência de compra prática, segura e completa
 
+Cadastro e Gestão de Clientes Corporativos: Permite o registro de empresas compradoras com informações cadastrais, dados fiscais e contatos.
+Possibilidade de atualização e gerenciamento de dados pelo próprio cliente.
+
+Catálogo de Produtos: O usuário poderá explorar facilmente os produtos disponíveis, visualizar imagens, descrições detalhadas, preços e conferir a disponibilidade em estoque em tempo real.
+
+Pagamentos Seguros e Ágeis: No momento da compra, será possível escolher entre diferentes formas de pagamento, como cartão de crédito, débito, Pix e outras opções, garantindo rapidez e transparência em cada transação.
+
+Acompanhamento de Pedidos: O cliente terá acesso ao status do seu pedido desde a confirmação da compra até a entrega, com atualizações em tempo real para maior tranquilidade.
 # Arquitetura da Solução
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
