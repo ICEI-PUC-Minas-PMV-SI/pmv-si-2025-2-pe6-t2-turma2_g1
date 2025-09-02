@@ -103,12 +103,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend |
-|03| Só poderá ser criada uma conta de usuário por e-mail |
-|04| O usuário não poderá ser cadastrado com CPF, e sim com CNPJ |
-|05| As senhas deverão te no mínimo 8 caracteres, alternando entre letras, números e caracteres especiais e verificação de e-mail |
-|06| Os preços serão tabelados |
-|07| Os sistemas não irão coletar dados sensíveis |
 
 
 
