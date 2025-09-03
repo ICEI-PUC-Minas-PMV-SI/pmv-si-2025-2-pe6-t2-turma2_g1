@@ -5,7 +5,6 @@ Atualmente, observa-se que o mercado de e-commerce é dominado por plataformas v
 
 Um cenário possível para esse contexto seria de uma empresa de consultoria que contrata simultaneamente dezenas de novos colaboradores pode precisar adquirir kits padronizados de periféricos, com faturamento centralizado em um único CNPJ, mas entregas fracionadas para filiais em diferentes estados, mantendo rastreabilidade por colaborador e controle de garantias. Esse tipo de demanda exige não apenas um catálogo especializado, mas também uma infraestrutura capaz de lidar com pedidos complexos e de grande volume sem comprometer prazos ou qualidade.
 
- 
 Além disso, há situações de reposição emergencial que reforçam a importância de um canal B2B eficiente. Um exemplo seria de uma equipe de campo com centenas de notebooks distribuídos nacionalmente que, após uma auditoria de TI, precise repor dezenas de fontes e mouses de forma urgente, garantindo compatibilidade por modelo e SKU (código do produto), com consolidação financeira em um único pedido e múltiplas entregas simultâneas. Casos como esse evidenciam a necessidade de uma solução robusta, escalável e orientada para o mercado corporativo. 
 
 Diante da realidade apresentada, propõe-se o desenvolvimento de uma plataforma de e-commerce escalável voltada exclusivamente para empresas, que centralize a compra de periféricos em um ambiente confiável e otimizado para transações corporativas.  
