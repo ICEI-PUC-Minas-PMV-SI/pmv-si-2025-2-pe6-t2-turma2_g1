@@ -11,14 +11,7 @@ const api = process.env.API_URL;
 app.use(bodyParser.json());
 app.use(morgan('tiny')); //formato de log de registro de eventos da API no console/terminal
 
-const produtoSchema = mongoose.Schema({
-  nome: String,
-  imagem: String,
-  contagemEstoque: Number,
-});
-
-const Produto = mongoose.model('Produto', produtoSchema);
-
+const Produto = require('./models/produtos');
 app.get(`${api}/produtos`, async (req, res) => {
   const produtoLista = await Produto.find();
 
