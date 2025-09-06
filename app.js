@@ -7,39 +7,14 @@ const mongoose = require('mongoose');
 require('dotenv/config');
 const api = process.env.API_URL;
 
+const produtosRouter = require('./routers/produtos');
+
 //middleware
 app.use(bodyParser.json());
 app.use(morgan('tiny')); //formato de log de registro de eventos da API no console/terminal
 
-const Produto = require('./models/produtos');
-app.get(`${api}/produtos`, async (req, res) => {
-  const produtoLista = await Produto.find();
-
-  if (!produtoLista) {
-    res.status(500).json({ success: false });
-  }
-  res.send(produtoLista);
-});
-
-app.post(`${api}/produtos`, (req, res) => {
-  const produto = new Produto({
-    nome: req.body.nome,
-    imagem: req.body.imagem,
-    contagemEstoque: req.body.contagemEstoque,
-  });
-
-  produto
-    .save()
-    .then((produtoAdicionado) => {
-      res.status(201).json(produtoAdicionado);
-    })
-    .catch((err) => {
-      res.status(500).json({
-        error: err,
-        success: false,
-      });
-    });
-});
+//Routers
+app.use(`${api}/produtos`, produtosRouter);
 
 //string de conexão com banco
 mongoose
