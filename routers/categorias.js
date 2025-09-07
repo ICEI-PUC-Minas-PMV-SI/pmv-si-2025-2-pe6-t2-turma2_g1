@@ -1,14 +1,14 @@
-const { Usuario } = require('../models/usuario');
+const { Categoria } = require('../models/categoria');
 const express = require('express');
 const router = express.Router();
 
 router.get(`/`, async (req, res) => {
-  const usuarioLista = await User.find();
+  const categoriaLista = await Categoria.find();
 
-  if (!usuarioLista) {
+  if (!categoriaLista) {
     res.status(500).json({ success: false });
   }
-  res.send(usuarioLista);
+  res.send(categoriaLista);
 });
 
 module.exports = router;

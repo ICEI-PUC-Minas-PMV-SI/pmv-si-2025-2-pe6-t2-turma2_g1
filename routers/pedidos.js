@@ -1,14 +1,14 @@
-const { Usuario } = require('../models/usuario');
+const { Pedido } = require('../models/pedido');
 const express = require('express');
 const router = express.Router();
 
 router.get(`/`, async (req, res) => {
-  const usuarioLista = await User.find();
+  const pedidoLista = await Pedido.find();
 
-  if (!usuarioLista) {
+  if (!pedidoLista) {
     res.status(500).json({ success: false });
   }
-  res.send(usuarioLista);
+  res.send(pedidoLista);
 });
 
 module.exports = router;
