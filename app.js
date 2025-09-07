@@ -3,20 +3,30 @@ const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-
+const cors = require('cors');
 require('dotenv/config');
-const api = process.env.API_URL;
 
-const produtosRouter = require('./routers/produtos');
+app.use(cors());
+app.options('*', cors());
 
 //middleware
 app.use(bodyParser.json());
 app.use(morgan('tiny')); //formato de log de registro de eventos da API no console/terminal
 
 //Routers
-app.use(`${api}/produtos`, produtosRouter);
+const produtosRouter = require('./routers/produtos');
+const categoriasRouter = require('./routers/categorias');
+const usuariosRouter = require('./routers/usuarios');
+const pedidosRouter = require('./routers/pedidos');
 
-//string de conexão com banco
+const api = process.env.API_URL;
+
+app.use(`${api}/produtos`, produtosRouter);
+app.use(`${api}/categorias`, categoriasRouter);
+app.use(`${api}/usuarios`, usuariosRouter);
+app.use(`${api}/pedidos`, pedidosRouter);
+
+//conexão com banco
 mongoose
   .connect(process.env.CONNECTION_STRING)
   .then(() => {
