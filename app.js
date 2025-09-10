@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv/config');
 
-app.use(cors());
-app.options('*', cors());
+//app.use(cors());
+//app.options('*', cors()); // Este código aqui está dand erro na aplicação. Preciso investigar
 
 //middleware
 app.use(bodyParser.json());
