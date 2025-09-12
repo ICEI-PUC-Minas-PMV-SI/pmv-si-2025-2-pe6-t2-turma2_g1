@@ -195,4 +195,4 @@ Este projeto foi desenvolvido como parte do Projeto Eixo 6 - PMV SI 2025-2.
 
 ---
 
-**Desenvolvido com ❤️ para o mercado corporativo brasileiro**
+**Desenvolvido com ❤️ para o mercado corporativo brasileiro**# b2b
