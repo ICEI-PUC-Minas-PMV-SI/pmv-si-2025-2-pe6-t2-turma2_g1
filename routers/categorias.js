@@ -8,7 +8,17 @@ router.get(`/`, async (req, res) => {
   if (!categoriaLista) {
     res.status(500).json({ success: false });
   }
-  res.send(categoriaLista);
+  res.status(200).send(categoriaLista);
+});
+
+router.get('/:id', async (req, res) => {
+  const categoria = await Categoria.findById(req.params.id);
+  if (!categoria) {
+    res.status(500).json({
+      massage: 'A categoria esta com o ID fornecido nao foi encontrada ',
+    });
+  }
+  res.status(200).send(categoria);
 });
 
 router.post('/', async (req, res) => {
