@@ -25,12 +25,29 @@ router.post('/', async (req, res) => {
   let categoria = new Categoria({
     nome: req.body.nome,
     icone: req.body.icone,
-    color: req.body.color,
+    cor: req.body.cor,
   });
   categoria = await categoria.save();
 
   if (!categoria)
-    return res.status(404).send('A categoria nao pode ser criada!');
+    return res.status(400).send('A categoria nao pode ser criada!');
+
+  res.send(categoria);
+});
+
+router.put('/:id', async (req, res) => {
+  const categoria = await Categoria.findByIdAndUpdate(
+    req.params.id,
+    {
+      nome: req.body.nome,
+      icone: req.body.icone,
+      cor: req.body.cor,
+    },
+    { new: true },
+  );
+
+  if (!categoria)
+    return res.status(400).send('A categoria nao pode ser criada!');
 
   res.send(categoria);
 });
