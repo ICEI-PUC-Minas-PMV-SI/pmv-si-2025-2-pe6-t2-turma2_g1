@@ -92,8 +92,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Gestão de produtos: cadastro, edição, exclusão e visualização de produtos.   | ALTA |
 |RF-003| Carrinho de compras e checkout: adicionar, remover, ajustar a quantidade de produtos, exibir valor total da compra.   | ALTA |
 |RF-004| Histórico de Pedidos: exibição do histórico de compras para clientes.  | MÉDIA |
-|RF-005| Oferecer histórico de compras para cada cliente   | MÉDIA |
-|RF-006| Gestão de estoque: atualização automática do estoque após efetivação da venda   | MÉDIA |
+|RF-005| Gestão de estoque: atualização automática do estoque após efetivação da venda   | MÉDIA |
 
 ### Requisitos não Funcionais
 
