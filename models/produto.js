@@ -9,7 +9,7 @@ const produtoSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  descricaoDetalha: {
+  descricaoDetalhada: {
     type: String,
     default: '',
   },
@@ -17,11 +17,6 @@ const produtoSchema = mongoose.Schema({
     type: String,
     default: '',
   },
-  imagens: [
-    {
-      type: String,
-    },
-  ],
   marca: {
     type: String,
     default: '',
