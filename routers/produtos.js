@@ -16,7 +16,7 @@ router.post(`/`, async (req, res) => {
   const categoria = await Categoria.findById(req.body.categoria);
   if (!categoria) return res.status(400).send('Categoria invalida');
 
-  const produto = new Produto({
+  let produto = new Produto({
     nome: req.body.nome,
     descricao: req.body.descricao,
     descricaoDetalhada: req.body.descricaoDetalhada,
@@ -24,7 +24,7 @@ router.post(`/`, async (req, res) => {
     marca: req.body.marca,
     preco: req.body.preco,
     categoria: req.body.categoria,
-    contagemEstoque: req.body.contagemEstoque, //35:00
+    contagemEstoque: req.body.contagemEstoque,
   });
   produto = await produto.save();
 
