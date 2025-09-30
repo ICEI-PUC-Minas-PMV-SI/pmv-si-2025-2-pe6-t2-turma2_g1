@@ -50,4 +50,75 @@ router.post(`/`, async (req, res) => {
   res.send(produto);
 });
 
+//atualizar um produto
+router.put('/:id', async (req, res) => {
+  if (!mongoose.isValidObjectId(req.params.id)) {
+    res.status(400).send('Id do Produto invalido');
+  }
+  const categoria = await Categoria.findById(req.body.categoria);
+  if (!categoria) return res.status(400).send('Categoria invalida');
+
+  const produto = await Produto.findByIdAndUpdate(
+    req.params.id,
+    {
+      nome: req.body.nome,
+      descricao: req.body.descricao,
+      descricaoDetalhada: req.body.descricaoDetalhada,
+      imagem: req.body.imagem,
+      marca: req.body.marca,
+      preco: req.body.preco,
+      categoria: req.body.categoria,
+      contagemEstoque: req.body.contagemEstoque,
+      emDestaque: req.body.emDestaque,
+    },
+    { new: true },
+  );
+
+  if (!produto)
+    return res.status(500).send('O produto nao pode ser atualizado!');
+
+  res.send(produto);
+});
+
+router.delete('/:id', (req, res) => {
+  Produto.findByIdAndDelete(req.params.id)
+    .then((produto) => {
+      if (produto) {
+        return res
+          .status(200)
+          .json({ success: true, message: 'O produto foi deletado!' });
+      } else {
+        return res
+          .status(404)
+          .json({ success: false, message: 'O produto nao foi encontrado!' });
+      }
+    })
+    .catch((err) => {
+      return res.status(400).json({ success: false, error: err });
+    });
+});
+
+//Quantos produtos tenho no banco de dados
+router.get(`/get/quantidade`, async (req, res) => {
+  const quantidadeProduto = await Produto.countDocuments({});
+
+  if (!quantidadeProduto) {
+    res.status(500).json({ success: false });
+  }
+  res.send({
+    quantidadeProduto: quantidadeProduto,
+  });
+});
+
+//Rota para produtos em destaque
+router.get(`/get/destaque/:quantidade`, async (req, res) => {
+  const quantidade = req.params.quantidade ? req.params.quantidade : 0;
+  const produtos = await Produto.find({ emDestaque: true }).limit(+quantidade);
+
+  if (!produtos) {
+    res.status(500).json({ success: false });
+  }
+  res.send(produtos);
+});
+
 module.exports = router;
