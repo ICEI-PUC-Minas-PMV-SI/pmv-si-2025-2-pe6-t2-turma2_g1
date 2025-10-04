@@ -173,11 +173,12 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 
 A segurança é um aspecto crítico para qualquer API web, especialmente em aplicações de e-commerce que lidam com dados sensíveis. A seguir, estão as principais medidas adotadas nesta API:
 
-A API utiliza JWT (JSON Web Token) para autenticação.
-Usuários devem fornecer um token válido para acessar rotas protegidas.
-Tokens possuem tempo de expiração de 24 horas, reduzindo o risco de uso indevido em caso de vazamento.
-Senhas são armazenadas criptografadas usando bcrypt, garantindo que a senha real nunca seja salva no banco de dados.
-Boas práticas de configuração, como uso de variáveis de ambiente para chaves sensíveis.
+- A API utiliza **JWT (JSON Web Token)** para autenticação.
+- Usuários devem fornecer um token válido para acessar rotas protegidas.
+- Tokens possuem **tempo de expiração de 24 horas**, reduzindo o risco de uso indevido em caso de vazamento.
+- Senhas são **armazenadas criptografadas** usando **bcrypt**, garantindo que a senha real nunca seja salva no banco de dados.
+- Boas práticas de configuração, como uso de variáveis de ambiente para chaves sensíveis..
+
 ## Implantação
 
  Passos necessários para implantar a aplicação em um ambiente de produção.
