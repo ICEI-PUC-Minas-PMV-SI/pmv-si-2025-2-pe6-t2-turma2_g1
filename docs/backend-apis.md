@@ -106,7 +106,7 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 - Body (JSON)
 - Capturas de tela do Postman em execução local (porta 3000) 
 
-![Criar um novo pedido POST](../Doc/CriarumnovopedidoPOST.png)
+![Criar um novo pedido POST](../docs/CriarumnovopedidoPOST.png)
 
 ### Listar todos os pedidos
 - Método: GET
@@ -115,7 +115,7 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 - Body: Nenhum
 - Capturas de tela do Postman em execução local (porta 3000) 
 
-![ListartodosospedidosGET](../Doc/ListartodosospedidosGET.png)
+![ListartodosospedidosGET](../docs/ListartodosospedidosGET.png)
 
 ### Obter um pedido específico
 - Método: GET
@@ -125,7 +125,7 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 - Resposta esperada: Detalhes do pedido
 - Capturas de tela do Postman em execução local (porta 3000) 
 
-![ObterumpedidoespecíficoGET](../Doc/ObterumpedidoespecíficoGET.png)
+![ObterumpedidoespecíficoGET](../docs/ObterumpedidoespecíficoGET.png)
 
 ### Atualizar alguma informação
 - Método: PUT
@@ -135,7 +135,7 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 - Resposta esperada: Pedido atualizado com novo status por exemplo
 - Capturas de tela do Postman em execução local (porta 3000) 
 
-![AtualizarstatusdepedidoPUT](../Doc/AtualizarstatusdepedidoPUT.png)
+![AtualizarstatusdepedidoPUT](../docs/AtualizarstatusdepedidoPUT.png)
 
 ### Deletar pedido
 - Método: DELETE
@@ -144,7 +144,7 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 - Resposta esperada: Mensagem confirmando exclusão ou erro.
 - Capturas de tela do Postman em execução local (porta 3000) 
 
-![DeletarpedidoDELETE](../Doc/DeletarpedidoDELETE.png)
+![DeletarpedidoDELETE](../docs/DeletarpedidoDELETE.png)
 
 
 ## Considerações de Segurança
