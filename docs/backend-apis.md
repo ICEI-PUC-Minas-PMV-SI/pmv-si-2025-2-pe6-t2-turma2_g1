@@ -7,22 +7,22 @@ O projeto consiste no desenvolvimento de uma API escalável para um e-commerce B
 ## Objetivos da API
 
 A API do nosso E-commerce foi desenvolvida para fornecer uma interface simples, segura e escalável para gerenciamento de produtos, categorias, pedidos e usuários. Sua finalidade é:
+- Permitir a integração entre o back-end e o front-end da aplicação de e-commerce.  
+- Oferecer endpoints REST para operações de CRUD (criar, ler, atualizar e deletar) sobre os principais recursos do sistema.  
+- Garantir segurança na autenticação e autorização de usuários por meio de **JWT (JSON Web Token)**. 
 
-Permitir a integração entre o back-end e o front-end da aplicação de e-commerce.
-Oferecer endpoints REST para operações de CRUD (criar, ler, atualizar e deletar) sobre os principais recursos do sistema.
-Garantir segurança na autenticação e autorização de usuários por meio de JWT (JSON Web Token).
-Recursos principais expostos pela API
-As rotas de produtos permitem gerenciar os itens disponíveis para venda no e-commerce.
-Todas as operações de criação, atualização e exclusão exigem autenticação via JWT (usuário administrador).
+### Recursos principais expostos pela API
+As rotas de **produtos** permitem gerenciar os itens disponíveis para venda no e-commerce.  
+Todas as operações de criação, atualização e exclusão exigem **autenticação via JWT** (usuário administrador).
 
-As rotas de categorias permitem organizar os produtos em grupos lógicos.
-Todas as operações de criação, atualização e exclusão exigem autenticação via JWT (usuário administrador).
+As rotas de **categorias** permitem organizar os produtos em grupos lógicos.  
+Todas as operações de criação, atualização e exclusão exigem **autenticação via JWT** (usuário administrador).
 
-As rotas de pedidos permitem criar, listar, atualizar e excluir pedidos de clientes, além de obter métricas como vendas totais e contagem de pedidos.
-Todas as operações exigem autenticação via JWT (usuário autenticado), sendo que algumas operações específicas (como listar todos ou deletar pedidos) devem ser restritas a administradores.
+As rotas de **pedidos** permitem criar, listar, atualizar e excluir pedidos de clientes, além de obter métricas como vendas totais e contagem de pedidos.  
+Todas as operações exigem **autenticação via JWT** (usuário autenticado), sendo que algumas operações específicas (como listar todos ou deletar pedidos) devem ser restritas a administradores.
 
-As rotas de usuários permitem o gerenciamento de clientes e administradores do sistema, além de oferecer endpoints de autenticação (login e registro).
-As rotas de administração (listar, criar, atualizar e deletar usuários) exigem autenticação via JWT e privilégios de administrador.
+As rotas de **usuários** permitem o gerenciamento de clientes e administradores do sistema, além de oferecer endpoints de autenticação (login e registro).  
+As rotas de administração (listar, criar, atualizar e deletar usuários) exigem **autenticação via JWT** e privilégios de administrador.
 
 
 ## Modelagem da Aplicação
