@@ -97,32 +97,55 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exemplos demonstram requisições e respostas para operações como busca (GET), criação (POST), atualização (PUT) e exclusão (DELETE), validando o funcionamento integrado do sistema.
 
-### Endpoint 1
+### Criar um novo pedido
+- Método: POST
+- URL: http://localhost:3000/api/v1/pedidos
+- Headers: Content-Type: application/json
+- Body (JSON)
+- Capturas de tela do Postman em execução local (porta 3000) 
+
+![Criar um novo pedido POST](../Doc/CriarumnovopedidoPOST.png)
+
+### Listar todos os pedidos
 - Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+- URL: http://localhost:3000/api/v1/pedidos
+- Headers: Content-Type: Nenhum obrigatório
+- Body: Nenhum
+- Capturas de tela do Postman em execução local (porta 3000) 
+
+![ListartodosospedidosGET](../Doc/ListartodosospedidosGET.png)
+
+### Obter um pedido específico
+- Método: GET
+- URL: http://localhost:3000/api/v1/pedidos/:id   (Substitumos :id pelo _id do pedido no MongoDB)
+- Headers: Content-Type: Nenhum obrigatório
+- Body: Nenhum
+- Resposta esperada: Detalhes do pedido
+- Capturas de tela do Postman em execução local (porta 3000) 
+
+![ObterumpedidoespecíficoGET](../Doc/ObterumpedidoespecíficoGET.png)
+
+### Atualizar alguma informação
+- Método: PUT
+- URL: http://localhost:3000/api/v1/pedidos/:id   (Substituimos :id pelo _id do pedido)
+- Headers: Content-Type: application/json
+- Body (JSON)
+- Resposta esperada: Pedido atualizado com novo status por exemplo
+- Capturas de tela do Postman em execução local (porta 3000) 
+
+![AtualizarstatusdepedidoPUT](../Doc/AtualizarstatusdepedidoPUT.png)
+
+### Deletar pedido
+- Método: DELETE
+- URL: http://localhost:3000/api/v1/pedidos/:id   (Substituimos :id pelo _id do pedido)
+- Headers: Content-Type:  Nenhum obrigatório
+- Resposta esperada: Mensagem confirmando exclusão ou erro.
+- Capturas de tela do Postman em execução local (porta 3000) 
+
+![DeletarpedidoDELETE](../Doc/DeletarpedidoDELETE.png)
+
 
 ## Considerações de Segurança
 
