@@ -12,7 +12,81 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+A aplicação utiliza MongoDB como banco de dados, com modelagem baseada em documentos. As principais entidades são: Usuário, Categoria, Produto, ItemPedido e Pedido. Cada entidade é representada por um Schema do Mongoose e possui relacionamentos entre si.
+
+### Usuário
+
+Representa os clientes e administradores da plataforma.
+
+**Campos:**  
+- `nome: String (obrigatório)`  
+- `email: String (obrigatório)`  
+- `Hashsenha: String (obrigatório, senha criptografada)`  
+- `telefone: String (obrigatório)`  
+- `isAdmin: Boolean (padrão: false)`  
+- `rua: String`  
+- `apartamento: String`  
+- `cep: String`  
+- `cidade: String`  
+- `estado: String`  
+
+
+
+###  Categoria
+
+Organiza os produtos em grupos temáticos.
+
+**Campos:**  
+- `nome: String (obrigatório)`  
+- `icone: String`  
+- `cor: String`  
+
+
+
+### Produto
+
+Representa um item disponível para compra.
+
+**Campos:**  
+- `nome: String (obrigatório)`  
+- `descricao: String (obrigatório)`  
+- `descricaoDetalhada: String (padrão: "")`  
+- `imagem: String (padrão: "")`  
+- `marca: String (padrão: "")`  
+- `preco: Number (padrão: 0)`  
+- `categoria: ObjectId → Categoria (obrigatório)`  
+- `contagemEstoque: Number (obrigatório, min: 0, max: 255)`  
+- `emDestaque: Boolean (padrão: false)`  
+
+
+
+### Pedido
+
+Representa a compra realizada por um usuário.
+
+**Campos:**  
+- `itensPedido: [ObjectId → ItemPedido] (obrigatório)`  
+- `enderecoEntrega1: String (obrigatório)`  
+- `enderecoEntrega2: String`  
+- `cidade: String (obrigatório)`  
+- `cep: String (obrigatório)`  
+- `estado: String (obrigatório)`  
+- `telefone: String (obrigatório)`  
+- `status: String (obrigatório, padrão: "Pendente")`  
+- `precoTotal: Number`  
+- `usuario: ObjectId → Usuario (obrigatório)`  
+- `dataPedido: Date (padrão: Date.now)`  
+
+
+
+### 🔗 Relacionamentos  
+
+- Um **Produto** pertence a **uma Categoria**.  
+- Um **Pedido** é feito por **um Usuário**.  
+- Um **Pedido** contém **vários ItensPedido**.  
+- Cada **ItemPedido** referencia **um Produto**.  
+
 
 
 ## Tecnologias Utilizadas
