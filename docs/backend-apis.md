@@ -105,15 +105,16 @@ Representa a compra realizada por um usuário.
 
 ## Tecnologias Utilizadas
 
-A API foi desenvolvida com base em tecnologias modernas que permitem escalabilidade, segurança e facilidade de manutenção.
+A API foi desenvolvida com base em tecnologias modernas que permitem escalabilidade, segurança e facilidade de manutenção.  
 A tabela abaixo apresenta as principais ferramentas utilizadas no projeto:
 
-Categoria	Tecnologia	Versão	Por que foi escolhida?
-Backend	Node.js	20.x	Plataforma leve, rápida e amplamente utilizada para aplicações escaláveis em tempo real.
-Framework	Express.js	4.x	Framework minimalista para Node.js que simplifica a criação de APIs RESTful.
-Banco de Dados	MongoDB	6.x	Banco de dados NoSQL orientado a documentos, flexível e ideal para aplicações que lidam com dados dinâmicos.
-Autenticação	JWT (JSON Web Token)	-	Método seguro e simples para autenticação e autorização de usuários em APIs.
-Testes	Postman	Última versão	Ferramenta prática para testar endpoints, validar requisições e documentar chamadas da API.
+| Categoria       | Tecnologia | Versão     | Por que foi escolhida? |
+|-----------------|------------|------------|-------------------------|
+| **Backend**     | Node.js    | 20.x       | Plataforma leve, rápida e amplamente utilizada para aplicações escaláveis em tempo real. |
+| **Framework**   | Express.js | 4.x        | Framework minimalista para Node.js que simplifica a criação de APIs RESTful. |
+| **Banco de Dados** | MongoDB | 6.x        | Banco de dados NoSQL orientado a documentos, flexível e ideal para aplicações que lidam com dados dinâmicos. |
+| **Autenticação**| JWT (JSON Web Token) | - | Método seguro e simples para autenticação e autorização de usuários em APIs. |
+| **Testes**      | Postman    | Última versão | Ferramenta prática para testar endpoints, validar requisições e documentar chamadas da API. |
 
 ## API Endpoints
 
