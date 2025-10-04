@@ -105,9 +105,15 @@ Representa a compra realizada por um usuário.
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+A API foi desenvolvida com base em tecnologias modernas que permitem escalabilidade, segurança e facilidade de manutenção.
+A tabela abaixo apresenta as principais ferramentas utilizadas no projeto:
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+Categoria	Tecnologia	Versão	Por que foi escolhida?
+Backend	Node.js	20.x	Plataforma leve, rápida e amplamente utilizada para aplicações escaláveis em tempo real.
+Framework	Express.js	4.x	Framework minimalista para Node.js que simplifica a criação de APIs RESTful.
+Banco de Dados	MongoDB	6.x	Banco de dados NoSQL orientado a documentos, flexível e ideal para aplicações que lidam com dados dinâmicos.
+Autenticação	JWT (JSON Web Token)	-	Método seguro e simples para autenticação e autorização de usuários em APIs.
+Testes	Postman	Última versão	Ferramenta prática para testar endpoints, validar requisições e documentar chamadas da API.
 
 ## API Endpoints
 
@@ -163,8 +169,13 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A segurança é um aspecto crítico para qualquer API web, especialmente em aplicações de e-commerce que lidam com dados sensíveis. A seguir, estão as principais medidas adotadas nesta API:
 
+A API utiliza JWT (JSON Web Token) para autenticação.
+Usuários devem fornecer um token válido para acessar rotas protegidas.
+Tokens possuem tempo de expiração de 24 horas, reduzindo o risco de uso indevido em caso de vazamento.
+Senhas são armazenadas criptografadas usando bcrypt, garantindo que a senha real nunca seja salva no banco de dados.
+Boas práticas de configuração, como uso de variáveis de ambiente para chaves sensíveis.
 ## Implantação
 
 [Instruções para implantar a aplicação distribuída em um ambiente de produção.]
