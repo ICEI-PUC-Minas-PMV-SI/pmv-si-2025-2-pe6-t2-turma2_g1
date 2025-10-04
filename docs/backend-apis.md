@@ -115,6 +115,7 @@ A tabela abaixo apresenta as principais ferramentas utilizadas no projeto:
 | **Banco de Dados** | MongoDB | 6.x        | Banco de dados NoSQL orientado a documentos, flexível e ideal para aplicações que lidam com dados dinâmicos. |
 | **Autenticação**| JWT (JSON Web Token) | - | Método seguro e simples para autenticação e autorização de usuários em APIs. |
 | **Testes**      | Postman    | Última versão | Ferramenta prática para testar endpoints, validar requisições e documentar chamadas da API. |
+| **Contêiner**      | Docker    | Última versão | Ferramenta utlizada para empacotar tudo que o código precisa para rodar (código, bibliotecas, configurações). |
 
 ## API Endpoints
 
@@ -179,13 +180,69 @@ Senhas são armazenadas criptografadas usando bcrypt, garantindo que a senha rea
 Boas práticas de configuração, como uso de variáveis de ambiente para chaves sensíveis.
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+ Passos necessários para implantar a aplicação em um ambiente de produção.
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+### Requisitos de Hardware e Software
+
+### Hardware
+- CPU: 2 cores ou mais
+- Memória RAM: 4GB ou mais
+- Armazenamento: 20GB ou mais
+- Conectividade de rede estável
+
+### Software
+- Node.js (versão 20.x)
+- MongoDB (versão 6.x ou compatível)
+- Git
+- NPM 
+- Servidor web (opcional: Nginx ou Apache para proxy reverso)
+- Docker/Docker Desktop
+- Sistema operacional:  Windows ou Linux
+
+
+### Configuração do Ambiente
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t2-turma2_g1.git 
+   
+   cd pmv-si-2025-2-pe6-t2-turma2_g1
+   
+   Conecte seu repositório Git;
+    ```
+
+2. **Instale o Docker/Docker Desktop:**
+    
+    Windows: https://docs.docker.com/desktop/setup/install/windows-install/
+    
+    Linux: https://docs.docker.com/engine/install/
+
+
+3. **Inicie a API usando o Docker**
+
+    Entre no diretório do projeto e execute o seguinte comando:
+    
+    ```bash
+   docker compose up --build
+   ```
+
+   Caso queira parar o container, execute o comando:
+
+   ```bash
+   docker compose down
+   ```
+
+4. **O contêiner estará pronto para receber requisições na porta 3000**
+
+5. **Testes em Produção:**
+
+- Verifique se a API está acessível no endereço configurado 
+- Teste endpoints principais com Postman ou ferramentas similares.
+- Certifique-se de que a Autenticação JWT funciona corretamente.
+- Operações CRUD estão funcionando em produtos, pedidos, categorias e usuários.
+
+
+**[Escolha da Plataforma de Hospedagem]** A definir pelo grupo
 
 ## Testes
 
