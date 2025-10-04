@@ -163,13 +163,31 @@ Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exe
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+1. **Validação de dados:** 
+Objetivo: Garantir que os dados enviados aos endpoints estejam no formato e tipo corretos.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Resultados esperados:
+
+Requisições com dados válidos (ex: id de produto correto, quantidade positiva) devem ser processadas com sucesso (ex: HTTP 200 ou 201). E Requisições com dados inválidos (ex: id inexistente, quantidade negativa, campos obrigatórios ausentes) devem retornar erros apropriados (ex: HTTP 500 ou 401) com mensagens claras
+![validacaodedadosprodutoGET](../Doc/validacaodedadosprodutoGET.png)
+![validacaodedadoserror500](../Doc/validacaodedadoserror500.png)
+
+2. **Cadastro de um produto:** 
+Resultados esperados:
+
+Um novo produto com todos os campos obrigatórios preenchidos deve ser salvo no banco e retornar HTTP 200 OK
+![produtosalvocomsucessoPOST200](../Doc/produtosalvocomsucessoPOST200.png)
+
+O banco deve refletir a inserção (verificável via MongoDB)
+![produtosalvonobanco](../Doc/produtosalvonobanco.png)
+
+3. **Requisições com dados inválidos:** 
+Requisições com dados faltantes ou inválidos devem ser rejeitadas
+![requiseicaorejeitadaPOST](../Doc/requiseicaorejeitadaPOST.png)
+
+4. **Autenticação e autorização** 
+Objetivo: Garantir segurança de acesso aos endpoints sensíveis.
+![autorizaçãoPOSTpedidos](../Doc/autorizaçãoPOSTpedidos.png)
 
 # Referências
 
