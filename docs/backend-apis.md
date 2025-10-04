@@ -169,25 +169,25 @@ Objetivo: Garantir que os dados enviados aos endpoints estejam no formato e tipo
 Resultados esperados:
 
 Requisições com dados válidos (ex: id de produto correto, quantidade positiva) devem ser processadas com sucesso (ex: HTTP 200 ou 201). E Requisições com dados inválidos (ex: id inexistente, quantidade negativa, campos obrigatórios ausentes) devem retornar erros apropriados (ex: HTTP 500 ou 401) com mensagens claras
-![validacaodedadosprodutoGET](../Doc/validacaodedadosprodutoGET.png)
-![validacaodedadoserror500](../Doc/validacaodedadoserror500.png)
+![validacaodedadosprodutoGET](../docs/validacaodedadosprodutoGET.png)
+![validacaodedadoserror500](../docs/validacaodedadoserror500.png)
 
 2. **Cadastro de um produto:** 
 Resultados esperados:
 
 Um novo produto com todos os campos obrigatórios preenchidos deve ser salvo no banco e retornar HTTP 200 OK
-![produtosalvocomsucessoPOST200](../Doc/produtosalvocomsucessoPOST200.png)
+![produtosalvocomsucessoPOST200](../docs/produtosalvocomsucessoPOST200.png)
 
 O banco deve refletir a inserção (verificável via MongoDB)
-![produtosalvonobanco](../Doc/produtosalvonobanco.png)
+![produtosalvonobanco](../docs/produtosalvonobanco.png)
 
 3. **Requisições com dados inválidos:** 
 Requisições com dados faltantes ou inválidos devem ser rejeitadas
-![requiseicaorejeitadaPOST](../Doc/requiseicaorejeitadaPOST.png)
+![requiseicaorejeitadaPOST](../docs/requiseicaorejeitadaPOST.png)
 
 4. **Autenticação e autorização** 
 Objetivo: Garantir segurança de acesso aos endpoints sensíveis.
-![autorizaçãoPOSTpedidos](../Doc/autorizaçãoPOSTpedidos.png)
+![autorizaçãoPOSTpedidos](../docs/autorizaçãoPOSTpedidos.png)
 
 # Referências
 
