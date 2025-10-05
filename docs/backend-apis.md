@@ -277,33 +277,48 @@ Objetivo: Garantir segurança de acesso aos endpoints sensíveis.
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
 
+- [Learn REST APIs](https://rapidapi.com/learn/rest#what-is-an-api)
+- [Documentação oficial do Node.js](https://nodejs.org/en/docs)
+- [Guia Express.js](https://expressjs.com/pt-br/)
+- [Artigo sobre JWT Authentication](https://jwt.io/introduction/)
+- [Microfundamento APIs e Web Services](https://pucminas.instructure.com/courses/155663)
+- [Microfundamento: Desenvolvimento Web Back-End](https://pucminas.instructure.com/courses/149505)
+- [E-Commerce API with Node JS](https://www.youtube.com/watch?v=hPv9QwvliEM&list=PLzb46hGUzitBp584kLyn6l3i6yC-rXlmN)
+ 
+
 # Planejamento
 
 ##  Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
+### Backend APIs
 
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Vitoria Soares        | Estrutura inicial das apis | 04/09/2025     | 05/10/2025 | 📝    |      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
-#### Semana 2
-
-Atualizado em: 21/04/2024
+Atualizado em: 04/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Vitoria         | Estrutura inicial das APIs | 04/09/2025     | 05/10/2025 | ✔️    | 16/09/2025     |
+| Vitoria e Helberth        | API Produdo    | 04/09/2025     | 05/10/2025 | ✔️    |   29/09/2025              |
+| Vitoria        | API Categoria  | 04/09/2025     | 05/10/2025 | ✔️     |  16/09/2025               |
+| Nathan e Ian       | API Usuario e JWT  |    23/09/2025        | 05/10/2025 |  ✔️  |   04/10/2025     |
+| Sophia e Rafael        | API Pedidos  |    23/09/2025        | 05/10/2025 | ✔️   |   04/10/2025    |
+| Nathan       | Ambiente Docker  |    23/09/2025        | 05/10/2025 |  ✔️  |   29/09/2025     |
+
+#### Documentação
+
+Atualizado em: 04/10/2025
+
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Vitoria        | APIS e Web   | 27/09/2025     | 27/09/2025 | ✔️    | 27/09/2025      |
+| Rafael        | Objetivos    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Helberth        | Modelagem da aplicação    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Sophia        | Tecnologias utilizadas    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Vitoria        | APIs e endpoints    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Sophia        | Considerações de segurança    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Nathan        | Implantação    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
+| Ian        | Testes    | 04/10/2025     | 05/10/2025 | ✔️     |     04/10/2025            |
 
 Legenda:
 - ✔️: terminado
