@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv/config');
+const swaggerDocs = require('./swagger');
 
 //app.use(cors());
 //app.options('*', cors()); // Este código aqui está dand erro na aplicação. Preciso investigar
@@ -18,6 +19,9 @@ const produtosRouter = require('./routers/produtos');
 const categoriasRouter = require('./routers/categorias');
 const usuariosRouter = require('./routers/usuarios');
 const pedidosRouter = require('./routers/pedidos');
+
+// Swagger deve ser iniciado DEPOIS das rotas
+swaggerDocs(app);
 
 const api = process.env.API_URL;
 
