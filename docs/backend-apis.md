@@ -132,34 +132,15 @@ Endpoints da API (localhost:3000) no Swagger, focando no CRUD de usuários. Os e
 
 ![ListarprodutosGET](../docs/getprodutosswagger.png)
 
-### Obter um pedido específico
-- Método: GET
-- URL: http://localhost:3000/api/v1/pedidos/:id   (Substitumos :id pelo _id do pedido no MongoDB)
-- Headers: Content-Type: Nenhum obrigatório
-- Body: Nenhum
-- Resposta esperada: Detalhes do pedido
-- Capturas de tela do Postman em execução local (porta 3000) 
 
-![ObterumpedidoespecíficoGET](../docs/ObterumpedidoespecíficoGET.png)
+- Método: PUT (Atualiza um produto existente)
 
-### Atualizar alguma informação
-- Método: PUT
-- URL: http://localhost:3000/api/v1/pedidos/:id   (Substituimos :id pelo _id do pedido)
-- Headers: Content-Type: application/json
-- Body (JSON)
-- Resposta esperada: Pedido atualizado com novo status por exemplo
-- Capturas de tela do Postman em execução local (porta 3000) 
+![AtualizaprodutoPUT](../docs/putprodutosswagger.png)
 
-![AtualizarstatusdepedidoPUT](../docs/AtualizarstatusdepedidoPUT.png)
-
-### Deletar pedido
 - Método: DELETE
-- URL: http://localhost:3000/api/v1/pedidos/:id   (Substituimos :id pelo _id do pedido)
-- Headers: Content-Type:  Nenhum obrigatório
-- Resposta esperada: Mensagem confirmando exclusão ou erro.
-- Capturas de tela do Postman em execução local (porta 3000) 
 
-![DeletarpedidoDELETE](../docs/DeletarpedidoDELETE.png)
+
+![DeletarprodutoDELETE](../docs/)
 
 
 ## Considerações de Segurança
