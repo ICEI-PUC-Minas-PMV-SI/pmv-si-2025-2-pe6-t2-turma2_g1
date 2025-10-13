@@ -125,7 +125,7 @@ Endpoints da API (localhost:3000) no Swagger, focando no CRUD de usuários. Os e
 - Método POST(Criação de um produto)
 
 
-![Criar um novo produto POST](../docs/)
+![Criar um novo produto POST](../docs/postprodutoswagger.png)
 
 ### Listar todos os pedidos
 - Método: GET
