@@ -128,13 +128,9 @@ Endpoints da API (localhost:3000) no Swagger, focando no CRUD de usuários. Os e
 ![Criar um novo produto POST](../docs/postprodutoswagger.png)
 
 ### Listar todos os pedidos
-- Método: GET
-- URL: http://localhost:3000/api/v1/pedidos
-- Headers: Content-Type: Nenhum obrigatório
-- Body: Nenhum
-- Capturas de tela do Postman em execução local (porta 3000) 
+- Método: GET (Listar produtos com opção de filtrar por categorias)
 
-![ListartodosospedidosGET](../docs/ListartodosospedidosGET.png)
+![ListarprodutosGET](../docs/getprodutosswagger.png)
 
 ### Obter um pedido específico
 - Método: GET
