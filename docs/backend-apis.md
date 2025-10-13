@@ -119,16 +119,13 @@ A tabela abaixo apresenta as principais ferramentas utilizadas no projeto:
 
 ## API Endpoints
 
-Endpoints da API (localhost:3000) no Postman, focando no CRUD de Pedidos. Os exemplos demonstram requisições e respostas para operações como busca (GET), criação (POST), atualização (PUT) e exclusão (DELETE), validando o funcionamento integrado do sistema.
+Endpoints da API (localhost:3000) no Swagger, focando no CRUD de usuários. Os exemplos demonstram requisições e respostas para operações como busca (GET), criação (POST), atualização (PUT) e exclusão (DELETE), validando o funcionamento integrado do sistema.
 
-### Criar um novo pedido
-- Método: POST
-- URL: http://localhost:3000/api/v1/pedidos
-- Headers: Content-Type: application/json
-- Body (JSON)
-- Capturas de tela do Postman em execução local (porta 3000) 
+### Capturas de tela do Swagger em execução local (porta 3000) - Testes do CRUD de produtos
+- Método POST(Criação de um produto)
 
-![Criar um novo pedido POST](../docs/CriarumnovopedidoPOST.png)
+
+![Criar um novo produto POST](../docs/)
 
 ### Listar todos os pedidos
 - Método: GET
