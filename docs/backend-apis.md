@@ -101,6 +101,7 @@ Representa a compra realizada por um usuário.
 - Um **Pedido** contém **vários ItensPedido**.  
 - Cada **ItemPedido** referencia **um Produto**.  
 
+![Diagrama](../docs/DiagramadeModelode%20DadosER.png)
 
 
 ## Tecnologias Utilizadas
