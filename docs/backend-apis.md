@@ -241,7 +241,7 @@ O banco deve refletir a inserção (verificável via MongoDB)
 
 3. **Requisições com dados inválidos:** 
 Requisições com dados faltantes ou inválidos devem ser rejeitadas
-![requiseicaorejeitadaPOST](../docs/requiseicaorejeitadaPOST.png)
+![requiseicaorejeitadaPOST](../docs/Requisiçõescomdadosinválidos.png)
 
 4. **Autenticação e autorização** 
 Objetivo: Garantir segurança de acesso aos endpoints sensíveis.

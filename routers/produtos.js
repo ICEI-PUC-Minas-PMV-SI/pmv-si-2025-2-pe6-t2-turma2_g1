@@ -133,8 +133,15 @@ router.get(`/:id`, async (req, res) => {
  */
 
 router.post(`/`, async (req, res) => {
+  // Teste Vitoria se verifica se o ID é válido
+  if (!mongoose.isValidObjectId(req.body.categoria)) {
+    return res.status(400).send('ID de categoria inválido');
+  }
+
   const categoria = await Categoria.findById(req.body.categoria);
-  if (!categoria) return res.status(400).send('Categoria invalida');
+  if (!categoria) {
+    return res.status(400).send('Categoria não encontrada');
+  }
 
   let produto = new Produto({
     nome: req.body.nome,
@@ -147,6 +154,7 @@ router.post(`/`, async (req, res) => {
     contagemEstoque: req.body.contagemEstoque,
     emDestaque: req.body.emDestaque,
   });
+
   produto = await produto.save();
 
   if (!produto) return res.status(500).send('Produto não pode ser criado');
