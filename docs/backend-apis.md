@@ -248,6 +248,20 @@ Requisições com dados faltantes ou inválidos devem ser rejeitadas
 Objetivo: Garantir segurança de acesso aos endpoints sensíveis.
 ![autorizaçãoPOSTpedidos](../docs/autorizaçãoPOSTpedidos.png)
 
+5. **Documentação da API**
+
+- Documentação (via Swagger ou outra) deve:
+
+- Apresentar todos os endpoints com seus métodos HTTP.
+
+- Especificar os parâmetros esperados (body, query, headers).
+
+- Informar os possíveis códigos de status (200, 400, 401, etc.).
+
+- Exemplificar requisições e respostas.
+
+![docswagger](../docs/docswagger.png)
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
