@@ -137,10 +137,10 @@ Endpoints da API (localhost:3000) no Swagger, focando no CRUD de usuários. Os e
 
 ![AtualizaprodutoPUT](../docs/putprodutosswaggerrr.png)
 
-- Método: DELETE
+- Método: DELETE (Remove produto pelo Id)
 
 
-![DeletarprodutoDELETE](../docs/)
+![DeletarprodutoDELETE](../docs/deleteprodutoswagger.png)
 
 
 ## Considerações de Segurança
