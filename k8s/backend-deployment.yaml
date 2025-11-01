@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend-api
+  template:
+    metadata:
+      labels:
+        app: backend-api
+    spec:
+      containers:
+      - name: backend-api
+        image: registry.digitalocean.com/puc-container-registry/e-commerce-web-api-with-nodejs-api:latest
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - secretRef:
+            name: ecommerce-secrets
