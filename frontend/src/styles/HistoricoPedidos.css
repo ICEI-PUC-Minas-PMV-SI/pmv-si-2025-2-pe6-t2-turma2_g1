@@ -1,0 +1,50 @@
+.historico-container {
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.historico-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #007bff;
+}
+
+.historico-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.pedido-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.pedido-card:hover {
+  transform: scale(1.03);
+}
+
+.pedido-itens {
+  margin-top: 1rem;
+  border-top: 1px solid #dee2e6;
+  padding-top: 0.5rem;
+}
+
+.pedido-item {
+  font-size: 0.95rem;
+  color: #343a40;
+}
+
+.loading-text,
+.empty-message {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
