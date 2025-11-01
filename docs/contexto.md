@@ -90,7 +90,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| Gestão de usuários: cadastro e gerenciamento de clientes e logistas. | ALTA | 
 |RF-002| Gestão de produtos: visualização de produtos.   | ALTA |
-|RF-003| Carrinho de compras e checkout: adicionar, remover e exibir valor total da compra.   | ALTA |
+|RF-003| Carrinho de compras e checkout: adicionar, remover, exibir valor total e finalizar compra.   | ALTA |
 |RF-004| Histórico de Pedidos: exibição do histórico de compras para clientes.  | MÉDIA |
 
 ### Requisitos não Funcionais
