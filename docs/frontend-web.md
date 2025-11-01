@@ -1,6 +1,16 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+## Descrição do Projeto
+
+O front-end do PIUMHI E-commerce é a interface web da plataforma B2B, especializada na comercialização de equipamentos eletrônicos. Foi desenvolvida para oferecer a empresas de médio e grande porte uma experiência de compra escalável, eficiente e intuitiva.
+
+### Objetivos Principais
+
+*   **Interface de Usuário Corporativa:** Prover uma experiência de compra limpa e responsiva, focada nas necessidades de clientes B2B.
+*   **Design Intuitivo:** Navegação simplificada para facilitar compras em volume e processos recorrentes.
+*   **Catálogo de Produtos:** Apresentar um catálogo organizado por categorias.
+*   **Carrinho de Compras e Checkout:** Oferecer um carrinho de compras integrado e um processo de checkout seguro.
+*   **Histórico de Pedidos e Relatórios:** Permitir que os clientes acessem um histórico de pedidos detalhado.
 
 ## Projeto da Interface Web
 
