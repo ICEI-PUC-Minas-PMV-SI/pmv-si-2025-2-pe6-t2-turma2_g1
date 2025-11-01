@@ -14,7 +14,15 @@ O front-end do PIUMHI E-commerce é a interface web da plataforma B2B, especiali
 
 ## Projeto da Interface Web
 
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface web do projeto consiste em uma aplicação moderna e responsiva, projetada para garantir uma experiência de usuário simples e direta, desde o login e a navegação no catálogo até a finalização de pedidos complexos e o gerenciamento da conta corporativa.
+
+### Páginas Principais
+
+*   **Página de Login/Registro:** Acesso seguro para usuários corporativos.
+*   **Página Principal (Catálogo de Produtos):** Exibição dos produtos com filtros por categoria.
+*   **Página do Carrinho:** Gerenciamento dos itens selecionados para compra.
+*   **Página de Checkout:** Finalização do pedido.
+*   **Painel do Cliente:** Acesso ao histórico de pedidos.
 
 ### Wireframes
 
