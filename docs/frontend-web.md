@@ -34,7 +34,10 @@ A interface web do projeto consiste em uma aplicação moderna e responsiva, pro
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+O fluxo de dados se dá à partir do login do usuário, que pode buscar produtos, mandá-los para o carrinho de compras, finalizar a compra e, mandar os dados para o histórico de pedidos. Ele também pode apenas acessar apenas o histórico ou apenas o carrinho, sem fazer outras compras.
+
+<img width="834" height="343" alt="image" src="https://github.com/user-attachments/assets/34d67cdc-9f7e-46f2-bbdc-597525ddb723" />
+
 
 ## Tecnologias Utilizadas
 [Lista das tecnologias principais que serão utilizadas no projeto.]
