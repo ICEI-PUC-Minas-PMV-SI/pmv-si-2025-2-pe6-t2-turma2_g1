@@ -91,7 +91,7 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 ### Semana 1
 
-Código
+* Código
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -101,17 +101,23 @@ Código
 | Rafael        | Tela HistóricoPedidosPage.js e HistóricoPedidoPage.css e Cart.js | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
 | Helberth        | Tela Login.js e Login.css | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
 | Vitoria        | Tela RegistroPage.js | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Sophia        | Tela CarrinhoPage.js e CarrinhoPage.css | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
+| Ian        | Tela ProfilePage.js e estilização Order.css | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
+| Nathan        | Hospedagem/Orquerstração K8S | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
 
 #### Semana 2
 
-Documentação
+* Documentação
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Vitoria        | Descrição do projeto e Considerações de segurança | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Helberth        | Testes | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Rafael        | Projeto da interface e Fluxo de dados | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Nathan        | Implantação | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Sophia        | Tecnologias e Desing Visual | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
+| Ian        | Wireframes | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
+| Sophia        | Slides apresentação | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
 
 Legenda:
 - ✔️: terminado
