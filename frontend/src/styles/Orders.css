@@ -1,0 +1,58 @@
+.orders-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.orders-container h1 {
+  text-align: center; /* Título da página centralizado */
+  margin-bottom: 2rem;
+  color: #212529;
+}
+
+.order-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+  text-align: left; /* Todo o conteúdo alinhado à esquerda */
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+}
+
+.order-card h3 {
+  color: #007bff;
+  text-align: center; /* Número do pedido centralizado */
+}
+
+.order-card p, .order-card li {
+  color: #495057;
+  margin: 6px 0;
+  text-align: left; /* reforça alinhamento à esquerda */
+}
+
+.order-card ul {
+  padding-left: 20px;
+  text-align: left; /* itens da lista alinhados à esquerda */
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  text-align: center;
+}
