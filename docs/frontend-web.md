@@ -40,7 +40,15 @@ O fluxo de dados se dá à partir do login do usuário, que pode buscar produtos
 
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+A interface web foi desenvolvida com tecnologias modernas, focadas em criar uma experiência de usuário rica, reativa e de fácil manutenção. A tabela abaixo detalha as principais ferramentas:
+
+| Categoria | Tecnologia | Versão | Por que foi escolhida? |
+|---|---|---|---|
+| **Linguagem** | JavaScript (ES6+) | - | Linguagem padrão da web, com uma vasta comunidade e ecossistema, essencial para criar interatividade no navegador. |
+| **Framework** | React.js | 18.x | Biblioteca líder de mercado para criar interfaces de usuário componentizadas, reativas e escaláveis, facilitando a manutenção e o desenvolvimento de SPAs (Single Page Applications). |
+| **Gerenciador de Pacotes** | NPM | 10.x | Ferramenta padrão do ecossistema Node.js para gerenciar as dependências do projeto, como bibliotecas e frameworks. |
+| **Estilização** | Styled Components | 6.x | Permite escrever CSS diretamente no JavaScript (CSS-in-JS), facilitando a criação de componentes com estilos encapsulados e dinâmicos. |
+| **Roteamento** | React Router | 6.x | Biblioteca padrão para gerenciar a navegação e as rotas em uma aplicação React, permitindo a criação de uma experiência de SPA fluida. 
 
 
 ## Considerações de Segurança
