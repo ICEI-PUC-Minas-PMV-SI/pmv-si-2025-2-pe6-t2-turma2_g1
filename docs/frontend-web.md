@@ -97,8 +97,10 @@ Código
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Vitoria        | Correção etapa 2 | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
 | Vitoria        | Estrutura inicial do código Front    |06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |                 |
-| Nathan        | HomePage.js e HomePage.css  | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
-| AlunoK        | Personas 1  | 06/10/2025     | 02/11/2025 | ✔️    | 01/01/2025      |
+| Nathan        | Tela HomePage.js e HomePage.css  | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Rafael        | Tela HistóricoPedidosPage.js e HistóricoPedidoPage.css e Cart.js | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Helberth        | Tela Login.js e Login.css | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Vitoria        | Tela RegistroPage.js | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
 
 #### Semana 2
 
