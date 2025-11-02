@@ -42,9 +42,16 @@ O fluxo de dados se dá à partir do login do usuário, que pode buscar produtos
 ## Tecnologias Utilizadas
 [Lista das tecnologias principais que serão utilizadas no projeto.]
 
+
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+As principais medidas adotadas incluem:
+
+* Autenticação segura: Utilização de tokens JWT com expiração e renovação controladas.
+
+* Proteção contra ataques comuns: Implementação de medidas contra XSS (Cross-site Scripting), CSRF (Cross-site Request Forgery) e injeções de código.
+
+* Criptografia: Senhas dos usuários armazenadas utilizando algoritmos de hash seguro (bcrypt).
 
 ## Implantação
 
