@@ -55,13 +55,17 @@ As principais medidas adotadas incluem:
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+Este projeto representa uma aplicação distribuída e altamente disponível, implantada e orquestrada em um cluster DigitalOcean Kubernetes (DOKS).
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+Tecnologia Principal
+Orquestração: Kubernetes (Gerenciado pela DigitalOcean)
+
+Hospedagem: DigitalOcean
+
+Arquitetura: Contêineres Docker/OCI
+
+Características da Implantação
+A implantação utiliza a arquitetura de contêineres para garantir escalabilidade e resiliência inerentes.
 
 ## Testes
 
