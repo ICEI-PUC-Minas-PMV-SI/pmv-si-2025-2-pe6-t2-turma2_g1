@@ -26,7 +26,25 @@ A interface web do projeto consiste em uma aplicação moderna e responsiva, pro
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+**Tela de Login**
+![Tela de Login](img/login.png)
+
+**Tela de Registro**
+![Tela de Registro](img/registro.png)
+
+**Tela Inicial (Home Screen)**
+![Home Screen](img/homescreen.png)
+
+**Página de Produtos**
+![Página de Produtos](img/paginadeprodutos.png)
+
+**Carrinho de Compras**
+![Carrinho de Compras](img/carrinhodecompras.png)
+
+**Histórico de Pedidos**
+![Histórico de Pedidos](img/historicodepedidos.png)
+
+
 
 ### Design Visual
 
@@ -213,4 +231,3 @@ Legenda:
 - 📝: em execução
 - ⌛: atrasado
 - ❌: não iniciado
-
