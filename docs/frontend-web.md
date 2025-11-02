@@ -91,18 +91,19 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 ### Semana 1
 
-Atualizado em: 21/04/2024
+Código
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Vitoria        | Correção etapa 2 | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| Vitoria        | Estrutura inicial do código Front    |06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |                 |
+| Nathan        | HomePage.js e HomePage.css
+  | 06/10/2025     | 02/11/2025 | ✔️    | 01/11/2025      |
+| AlunoK        | Personas 1  | 06/10/2025     | 02/11/2025 | ✔️    | 01/01/2025      |
 
 #### Semana 2
 
-Atualizado em: 21/04/2024
+Documentação
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
