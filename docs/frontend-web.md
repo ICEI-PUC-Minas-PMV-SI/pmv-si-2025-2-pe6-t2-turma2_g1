@@ -30,7 +30,88 @@ A interface web do projeto consiste em uma aplicação moderna e responsiva, pro
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+Paleta de Cores
+
+A interface segue uma paleta moderna e limpa, inspirada em tons neutros e corporativos:
+
+Cor	Hexadecimal	Uso principal
+Branco	#FFFFFF	Fundo dos cards, formulários e contêineres
+Cinza claro	#F8F9FA	Fundo geral das páginas e áreas neutras
+Cinza médio	#DEE2E6 / #CED4DA	Bordas sutis e divisores
+Cinza escuro	#212529 / #495057	Texto principal e títulos
+Azul primário	#007BFF	Botões, links e destaques
+Azul escuro	#0056B3	Efeito hover em botões e links
+Verde	#28A745	Botões de confirmação (Finalizar compra)
+Verde escuro	#218838	Hover do botão de confirmação
+Vermelho	#DC3545	Botões de exclusão, mensagens de erro
+Vermelho escuro	#BB2D3B	Hover em botões de remoção
+
+➡️ Resumo: A paleta é clara e profissional, combinando tons de azul e verde para ações positivas, com vermelho para alertas e erros. O uso de branco e cinza garante contraste e legibilidade.
+
+Tipografia
+
+A interface utiliza fontes sans-serif modernas, com alta legibilidade e visual limpo.
+
+Fontes principais:
+
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+
+Estilo predominante:
+
+Textos médios (14–16px), regulares, com espaçamento equilibrado
+
+Títulos em peso 600 (semibold) para destaque
+
+Cabeçalhos (h2, h3) geralmente centralizados e com espaçamento vertical generoso
+
+➡️ O resultado é um design corporativo e moderno, sem elementos visuais excessivos.
+
+Elementos Gráficos e Layout
+
+Containers e Cards:
+Blocos brancos com cantos levemente arredondados (border-radius: 8px) e sombras suaves (box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)), o que cria profundidade sutil e elegância.
+
+Botões:
+Grandes, com cores sólidas, texto branco e bordas arredondadas. Têm transições suaves de cor no hover.
+Exemplo:
+
+Azul (ação principal)
+
+Verde (confirmação)
+
+Vermelho (remoção)
+
+Inputs e Formulários:
+Campos amplos, com boa margem interna (padding) e destaque no foco (border-color: #007bff com box-shadow).
+O feedback visual ao digitar dá uma sensação de interatividade e resposta imediata.
+
+Alertas e mensagens de erro:
+Fundo vermelho claro com borda e texto vermelho escuro, visualmente consistente com a identidade de alerta.
+
+Disposição:
+As seções são centralizadas e possuem espaçamento interno generoso (padding: 2rem 3rem), favorecendo clareza e hierarquia visual.
+
+Hover e Interações:
+Os elementos (cards, botões) têm animações sutis, como:
+
+Sombreamento suave ao passar o mouse
+
+Leve aumento de escala nos cards (transform: scale(1.03))
+
+➡️ Isso reforça a sensação de interface responsiva, moderna e agradável.
+
+Ícones e Componentes Interativos
+
+Ícones simples (como de senha ou menu) seguem um estilo minimalista.
+
+Elementos interativos, como o botão de alternar senha (toggle-password-btn) e botões de menu, usam cores neutras e tamanhos pequenos para não distrair o usuário.
+
+Resumo do Estilo
+
+O design tem características clean, profissionais e acessíveis, com uma hierarquia visual clara e harmonia entre texto, botões e espaços.
+
+🔹 Personalidade visual: Moderna, confiável, leve.
+🔹 Sensação transmitida: Profissionalismo, usabilidade e foco na experiência do usuário.
 
 ## Fluxo de Dados
 
