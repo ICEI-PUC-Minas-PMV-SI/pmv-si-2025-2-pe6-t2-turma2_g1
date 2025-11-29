@@ -85,13 +85,16 @@ A segurança é um dos pilares fundamentais da nossa aplicação, tanto para pro
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+A estratégia de testes escolhidas foi Teste de Integração para validar a comunicação entre os componentes do front-end mobile e a integração com a Web API.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Para realizarmos, percorremos a aplicação móvel como usuários reais, exercitamos as funcionalidades integradas oferecidas e registramos o comportamento observado, com o intuito de validar que os componentes do sistema funcionam juntos conforme esperado. Para tal, registramos momentos em que o software funcionou e, também, levantou exceções como esperado.
+
+Os registros foram feitos à partir de prints do software rodando em tempo real.
+
+Os testes foram documentados na apresentação de slides de PowerPoint, disponível para visualização e download à seguir.
+
+[Teste de Integração Mobile - Piumhi](https://docs.google.com/presentation/d/1fWcwDrMT2vNHh9BR1tDdMFtAZVVFsBc4/edit?usp=sharing&ouid=109392622591362109472&rtpof=true&sd=true)
+
 
 # Referências
 
