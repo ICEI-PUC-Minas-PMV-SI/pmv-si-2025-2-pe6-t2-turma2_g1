@@ -164,7 +164,11 @@ Os testes foram documentados na apresentação de slides de PowerPoint, disponí
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- [Referencia tecnica projeto no expo.dev Prof Kleber](https://snack.expo.dev/@profklebersouza/mf-fuel-manager-sqlite)
+- [Docs React](https://pt-br.react.dev/)
+- [Docs React](https://reactnative.dev/docs/intro-react)
+- [Microfundamento: Desenvolvimento de Aplicações Móveis](https://pucminas.instructure.com/courses/155666)
+- [reactnavigation.org](https://reactnavigation.org/docs/getting-started/)
 
 # Planejamento
 
