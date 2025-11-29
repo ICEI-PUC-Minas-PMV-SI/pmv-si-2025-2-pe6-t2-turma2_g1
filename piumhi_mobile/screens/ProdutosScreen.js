@@ -1,172 +1,272 @@
-// import React from 'react';
-// import { View, StyleSheet, ScrollView, Image } from 'react-native';
-// import { Text, Button, Surface, useTheme } from 'react-native-paper';
-// import { useNavigation } from '@react-navigation/native';
-// import Container from '../components/Container'; 
-// import Icon from 'react-native-vector-icons/MaterialIcons';
-// import axios from 'axios';
+import React, { useState, useEffect } from 'react';
+import { View, StyleSheet, FlatList, Alert } from 'react-native';
+import { Text, Button, Card, ActivityIndicator, Paragraph, useTheme, IconButton } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
+import Container from '../components/Container';
 
-// const Usuario = () =>{
-//   const navigation = useNavigation();
-//   const theme = useTheme();
+import { useCart } from '../context/CartContext';
+
+
+const API_URL = 'http://35.222.189.84/api/v1/produtos';
+
+const ProdutosScreen = () => {
+  const navigation = useNavigation();
+  const theme = useTheme();
+
+ 
+  const { addToCart } = useCart();
+
+  const [produtos, setProdutos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const [quantities, setQuantities] = useState({});
 
   
-//   // 1. OBTENHA O ESTADO DE LOGIN E A FUNÇÃO DE LOGOUT
-//   const { isLoggedIn, signOut } = useAuth();
+  const fetchProdutos = async () => {
+   
+    setIsLoading(true);
+    setError(null);
+    setProdutos([]);
 
-//   // Função para navegação e logout (caso deseje um botão de Sair)
-//   const handleLogout = () => {
-//     signOut();
-//     // Opcional: navegar para a tela de login ou resetar o stack
-//     navigation.navigate('Login'); 
-//   };
+    try {
+      const response = await axios.get(API_URL);
 
-//   return (
-//     <Container>
-//       <ScrollView style={styles.container}>
-//         <Surface style={[styles.heroSection, { backgroundColor: theme.colors.primaryContainer }]}>
-//           <View style={styles.heroContent}>
-//             <Image
-//             source={require('../assets/logo_piumhi.png')} // <-- Ajuste o caminho se necessário
-//             style={styles.logo}
-//           />
-//             <Text variant="headlineLarge" style={styles.heroTitle}>
-//               Veja aqui seus dados de usuario
-//             </Text>
-//             <Text variant="bodyLarge" style={styles.heroSubtitle}>
-//               Explore nossa coleção de eletrônicos de última geração. Qualidade e performance que você pode confiar.
-//             </Text>
-            
-//             <View style={styles.heroActions}>
-              
-//               {/* Botão 1: VER PRODUTOS (Sempre visível) */}
-//               <Button
-//                 mode="contained"
-//                 onPress={() => navigation.navigate('Produtos')}
-//                 style={styles.button}
-//                 icon={({ size, color }) => (
-//                   <Icon name="shopping-cart" size={size} color={color} />
-//                 )}
-//               >
-//                 Ver Produtos
-//               </Button>
-              
-//               {/* ------------------------------------------- */}
-//               {/* 2. OPÇÕES PARA USUÁRIO DESLOGADO (Login/Cadastro) */}
-//               {/* ------------------------------------------- */}
-//               {!isLoggedIn ? (
-//                 <>
-//                   <Button
-//                     mode="outlined"
-//                     onPress={() => navigation.navigate('Registrar')}
-//                     style={styles.button}
-//                     icon={({ size, color }) => (
-//                       <Icon name="person-add" size={size} color={color} />
-//                     )}
-//                   >
-//                     Criar Conta
-//                   </Button>
-    
-//                   <Button
-//                     mode="outlined"
-//                     onPress={() => navigation.navigate('Login')}
-//                     style={styles.button}
-//                     icon={({ size, color }) => (
-//                       <Icon name="login" size={size} color={color} /> 
-//                     )}
-//                   >
-//                     Login
-//                   </Button>
-//                 </>
-//               ) : (
-//                 /* ------------------------------------------- */
-//                 /* 3. OPÇÕES PARA USUÁRIO LOGADO (Carrinho/Histórico) */
-//                 /* ------------------------------------------- */
-//                 <>
-//                   <Button
-//                     mode="outlined"
-//                     onPress={() => navigation.navigate('CarrinhoCompras')}
-//                     style={styles.button}
-//                     icon={({ size, color }) => (
-//                       <Icon name="shopping-cart" size={size} color={color} />
-//                     )}
-//                   >
-//                     Carrinho de Compras
-//                   </Button>
-    
-//                   <Button
-//                     mode="outlined"
-//                     onPress={() => navigation.navigate('HistoricoPedidos')}
-//                     style={styles.button}
-//                     icon={({ size, color }) => (
-//                       <Icon name="history" size={size} color={color} />
-//                     )}
-//                   >
-//                     Histórico de Pedidos
-//                   </Button>
-                  
-//                   {/* Sugestão: Botão de Sair/Logout */}
-//                   <Button
-//                     mode="outlined"
-//                     onPress={handleLogout}
-//                     style={styles.button}
-//                     icon={({ size, color }) => (
-//                       <Icon name="logout" size={size} color={color} />
-//                     )}
-//                   >
-//                     Sair
-//                   </Button>
-//                 </>
-//               )}
-//             </View>
-//           </View>
-//         </Surface>
-//         {/* ... (Resto da ScrollView/Conteúdo da página) ... */}
-//       </ScrollView>
-//     </Container>
-//   );
-// };
+      if (response.status >= 200 && response.status < 300) {
+        const dadosProdutos = response.data;
 
-// const styles = StyleSheet.create({ // <-- Objeto styles deve ser definido aqui
-//   container: {
-//     flex: 1,
-//   },
-//   heroSection: {
-//     padding: 24,
-//     margin: 16,
-//     borderRadius: 12,
-//     elevation: 4,
-//   },
-//   heroContent: {
-//     alignItems: 'center',
-//   },
-//   heroTitle: {
-//     textAlign: 'center',
-//     marginBottom: 16,
-//     fontWeight: 'bold',
-//   },
-//   heroSubtitle: {
-//     textAlign: 'center',
-//     marginBottom: 24,
-//     lineHeight: 20,
-//     opacity: 0.8,
-//   },
-//   heroActions: {
-//     flexDirection: 'row',
-//     flexWrap: 'wrap',
-//     justifyContent: 'center',
-//     gap: 12,
-//   },
-//   button: {
-//     minWidth: 140,
-//   },
-//    logo: {
-//     width: 150, // Defina a largura desejada
-//     height: 150, // Defina a altura desejada
-//     resizeMode: 'contain', // Garante que a imagem se ajuste sem cortar
-//     marginBottom: 20, // Espaço após a logo
-//   },
-// });
+        if (Array.isArray(dadosProdutos)) {
+          setProdutos(dadosProdutos);
+
+          const initialQuantities = dadosProdutos.reduce((acc, produto) => {
+
+            const key = String(produto.id || produto.nome);
+            acc[key] = 1; 
+            return acc;
+          }, {});
+          setQuantities(initialQuantities);
+        } else {
+          setError('A resposta da API não é um formato de lista válido.');
+        }
+
+      } else {
+        setError(`Erro ao carregar produtos: Status ${response.status}`);
+      }
+
+    } catch (err) {
+      console.error("Erro na busca de produtos:", err.message);
+
+      let errorMessage = 'Não foi possível conectar à API. Verifique sua conexão ou a URL do servidor.';
+      if (err.response) {
+        errorMessage = `Erro do servidor: ${err.response.status}. Verifique a API.`;
+      }
+
+      setError(errorMessage);
+
+    } finally {
+      setIsLoading(false);
+    }
+
+  };
+
+  useEffect(() => {
+    fetchProdutos();
+  }, []);
+
+ 
+  const getKey = (item) => String(item.id || item.nome);
+
+  const handleQuantityChange = (item, delta) => {
+    const key = getKey(item);
+    setQuantities(prevQuantities => {
+      const currentQuantity = prevQuantities[key] || 1;
+      const newQuantity = Math.max(1, currentQuantity + delta); 
+      return {
+        ...prevQuantities,
+        [key]: newQuantity,
+      };
+    });
+  };
+
+ 
+  const handleAddToCart = (item) => {
+    const key = getKey(item);
+    const quantity = quantities[key] || 1; 
+    if (quantity < 1) {
+        Alert.alert("Erro", "A quantidade deve ser no mínimo 1.");
+        return;
+    }
+
+   
+    addToCart(item, quantity);
+
+   
+    Alert.alert("Adicionado!", `${quantity} unidade(s) de ${item.nome} foram adicionadas ao seu carrinho.`, [
+      { text: "Continuar Comprando" },
+      { text: "Ver Carrinho", onPress: () => navigation.navigate('CarrinhoCompras') },
+    ]);
+  };
+
+  
+  const renderItem = ({ item }) => {
+    const key = getKey(item);
+    const quantity = quantities[key] || 1; 
+
+    return (
+      <Card style={[styles.card, { backgroundColor: theme.colors.surface }]}>
+        <Card.Cover
+          source={{
+            uri: item.imagem || 'https://placehold.co/600x400/EADDFF/6750A4?text=Sem+Imagem'
+          }}
+        />
+
+        <Card.Content style={{ marginTop: 10 }}>
+          <Text variant="titleMedium">{item.nome}</Text>
+          <Paragraph>R$ {item.preco ? Number(item.preco).toFixed(2) : '0.00'}</Paragraph>
+          <Paragraph style={styles.descricao} numberOfLines={2}>
+            {item.descricao || 'Sem descrição'}
+          </Paragraph>
+        </Card.Content>
+
+        <Card.Actions style={styles.cardActions}>
+ 
+            <View style={styles.quantityContainer}>
+                <IconButton
+                    icon="minus"
+                    size={20}
+                    onPress={() => handleQuantityChange(item, -1)}
+                    disabled={quantity <= 1} 
+                    containerColor={theme.colors.onSurfaceVariant}
+                    iconColor={theme.colors.surface}
+                />
+                <Text variant="titleLarge" style={styles.quantityText}>{quantity}</Text>
+                <IconButton
+                    icon="plus"
+                    size={20}
+                    onPress={() => handleQuantityChange(item, 1)}
+                    containerColor={theme.colors.onSurfaceVariant}
+                    iconColor={theme.colors.surface}
+                />
+            </View>
 
 
-// export default Usuario;
+            <Button
+                mode="contained"
+                onPress={() => handleAddToCart(item)}
+                style={styles.buyButton}
+            >
+                Adicionar ({quantity})
+            </Button>
+        </Card.Actions>
+      </Card>
+    );
+  };
+
+
+
+  return (
+    <Container>
+      <View style={styles.container}>
+        <Text variant="headlineMedium" style={styles.title}>
+          Nossos Produtos
+        </Text>
+
+        {isLoading ? (
+
+          <View style={styles.centerContainer}>
+            <ActivityIndicator animating={true} size="large" color={theme.colors.primary} />
+            <Text style={{ marginTop: 10 }}>Buscando dados...</Text>
+          </View>
+        ) : error ? (
+  
+          <View style={styles.centerContainer}>
+            <Text style={{ color: theme.colors.error, marginBottom: 10, textAlign: 'center' }}>
+              {error}
+            </Text>
+            <Button mode="outlined" onPress={fetchProdutos}>Tentar Novamente</Button>
+          </View>
+        ) : (
+          
+          <FlatList
+            data={produtos}
+            renderItem={renderItem}
+            keyExtractor={(item) => String(item.id || item.nome)}
+            contentContainerStyle={styles.listContent}
+            ListEmptyComponent={
+              <View style={styles.centerContainer}>
+                <Text style={[styles.subtitle, { color: theme.colors.onSurface }]}>
+                  Nenhum produto encontrado.
+                </Text>
+              </View>
+            }
+          />
+        )}
+
+        <Button
+          mode="contained"
+          onPress={() => navigation.goBack()}
+          style={styles.button}
+        >
+          Voltar para Home
+        </Button>
+      </View>
+    </Container>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+  },
+  centerContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    marginBottom: 16,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  subtitle: {
+    textAlign: 'center',
+    marginTop: 20,
+    opacity: 0.6,
+  },
+  listContent: {
+    paddingBottom: 20,
+    flexGrow: 1,
+  },
+  card: {
+    marginBottom: 12,
+    elevation: 2,
+  },
+  descricao: {
+    fontSize: 12,
+    marginTop: 4,
+  },
+  button: {
+    marginTop: 16,
+  },
+
+  cardActions: {
+    justifyContent: 'space-between', 
+    alignItems: 'center',
+  },
+  quantityContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  quantityText: {
+    marginHorizontal: 10,
+    minWidth: 20,
+    textAlign: 'center',
+  },
+  buyButton: {
+    marginLeft: 'auto', 
+  }
+});
+
+export default ProdutosScreen;
