@@ -31,11 +31,54 @@ Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para l
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+![Tela Inicial](../docs/TelaInicial.png)
+![Catalogo de Produtos](../docs/CatalogoDeProdutos.png)
+![Login](../docs/Login.png)
+![Register](../docs/Register.png)
+![Carrinho de Compras](../docs/CarrinhoDeCompras.png)
+![Historico de Pedidos](../docs/HistoricoDePedidos.png)
+
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+A identidade visual da aplicação é diretamente influenciada pelo **Material Design**, implementada através da biblioteca **React Native Paper**. Essa abordagem garante uma experiência de usuário consistente, familiar e visualmente coesa, aproveitando um sistema de design robusto e amplamente reconhecido.
+
+1. Paleta de Cores
+A aplicação utiliza o sistema de temas do `react-native-paper`, aplicando cores de forma semântica em vez de usar valores de cor fixos. Isso permite flexibilidade e consistência. As cores principais são acessadas via `theme.colors`:
+
+*   **primary (`#6750A4`)**: Roxo, usado como cor de destaque para elementos interativos importantes, como o cabeçalho e o indicador de carregamento (`ActivityIndicator`).
+*   **primaryContainer (`#EADDFF`)**: Lavanda claro, usado como cor de fundo para seções de destaque, como o cabeçalho da tela inicial, criando um ponto focal suave.
+*   **secondary (`#625B71`)**: Cinza-azulado, para elementos secundários.
+*   **surface (`#FFFBFE`)**: Branco com um leve tom de lavanda, cor principal para o fundo de `Card` e `Surface`.
+*   **surfaceVariant (`#E7E0EC`)**: Cinza claro, para variantes de superfícies, garantindo contraste e separação visual.
+*   **background (`#FFFBFE`)**: Cor de fundo geral da aplicação.
+*   **error**: Aplicada consistentemente em mensagens de erro e em ações destrutivas (como o botão de remover item do carrinho), fornecendo feedback visual claro e imediato.
+*   **onSurface**, **onPrimary**, etc.: Cores de texto e ícones, definidas pelo tema para garantir legibilidade sobre as cores de fundo correspondentes.
+
+2. Tipografia
+A hierarquia tipográfica é gerenciada pela propriedade `variant` do componente `Text` do `react-native-paper`, que utiliza a escala de tipos do Material Design. Isso garante que o texto seja legível e hierarquicamente organizado.
+
+*   **headlineLarge / headlineMedium**: Para títulos principais de páginas (ex: `HomePage`, `RegistrarScreen`).
+*   **titleLarge / titleMedium**: Para títulos de `Card` e seções internas.
+*   **bodyLarge / bodyMedium**: Para textos descritivos, parágrafos e informações gerais.
+*   **labelLarge**: Para o texto dentro de botões.
+
+3. Ícones
+Para reforçar a identidade visual do Material Design, a aplicação utiliza a biblioteca **react-native-vector-icons/MaterialIcons**. Os ícones são claros, reconhecíveis e aplicados de forma funcional em botões, campos de formulário e indicadores de status.
+
+*   **Estilo**: Ícones preenchidos (filled), seguindo o padrão do Material Design.
+*   **Uso**: `arrow-left` para navegação, `plus` e `minus` para seletores de quantidade, `cart` para o carrinho, `delete` para remoção de itens, etc.
+
+4. Outros Elementos Gráficos
+A componentização é feita com base nos elementos do `react-native-paper`:
+
+*   **Botões (`Button`)**: Utilizados em seus diferentes modos (`contained`, `outlined`, `text`) para criar uma hierarquia clara de ações.
+*   **Cards e Contêineres (`Card`, `Surface`)**: Usados extensivamente para agrupar informações, criando elevação e separação visual clara, como visto nas telas de produtos e histórico.
+*   **Campos de Texto (`TextInput`)**: Implementados no estilo `outlined` com ícones, proporcionando um visual moderno e funcional para formulários.
+
+Espaçamento:
+O espaçamento e o layout seguem as diretrizes do Material Design, garantindo um ritmo visual consistente e uma interface organizada, principalmente através do uso de `padding` e `margin` nos componentes e no `Container` reutilizável.
+
 
 ## Fluxo de Dados
 
