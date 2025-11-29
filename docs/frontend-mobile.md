@@ -1,9 +1,33 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O projeto do front-end móvel consiste no desenvolvimento de um aplicativo para iOS e Android que serve como cliente para a plataforma de e-commerce B2B. O objetivo principal é oferecer uma experiência de compra nativa, ágil e intuitiva para os clientes corporativos, permitindo que realizem pedidos, consultem o catálogo de produtos e gerenciem suas contas diretamente de seus smartphones.
+
+Desenvolvido com React Native e Expo, o aplicativo utiliza uma única base de código para ambas as plataformas, garantindo consistência visual e funcional. Ele se conecta à mesma API RESTful do back-end utilizada pela aplicação web, assegurando a sincronia de dados como estoque, pedidos e informações de usuários.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface móvel da aplicação foi desenvolvida com uma abordagem pragmática e funcional, utilizando o ecossistema React Native e a biblioteca de componentes React Native Paper. Isso estabelece uma base sólida no Material Design, garantindo uma experiência de usuário consistente, familiar e visualmente coesa em toda a aplicação.
+
+Design Visual e Componentização O estilo visual é diretamente influenciado pelo Material Design, fornecido pelo react-native-paper.
+Componentes Principais: A interface é construída com componentes padrão do Material Design, como:
+
+Surface e Card: Usados extensivamente para agrupar informações, criando elevação e separação visual clara (visto em HomePage, HistoricoPedidos, CarrinhoCompras e ProdutosScreen). Button: Utilizado em seus diferentes modos (contained, outlined, text) para hierarquizar ações, desde chamadas primárias (Login, Finalizar Compra) até ações secundárias (Tentar Novamente, Ver Detalhes). TextInput: Implementado no estilo outlined com ícones, proporcionando um visual moderno e claro para formulários de Login e Registro. ActivityIndicator e Text: Combinados para criar estados de carregamento claros, informando ao usuário que os dados estão sendo buscados. Paleta de Cores (via useTheme): A aplicação utiliza o sistema de temas do react-native-paper. As cores são aplicadas de forma semântica, aproveitando o theme.colors:
+
+primaryContainer: Usado como fundo para seções de destaque (heroSection) na Home e no Histórico, criando um ponto focal suave. primary: Cor de destaque para elementos importantes, como o indicador de carregamento. surface e surfaceVariant: Cores de fundo para os cards e superfícies, garantindo contraste e legibilidade. error: Aplicada consistentemente em textos de erro e botões de remoção (como no carrinho), fornecendo feedback visual imediato. Tipografia (via variant): A hierarquia de texto é gerenciada pela propriedade variant do componente Text, utilizando a escala tipográfica do Material Design:
+
+headlineLarge / headlineMedium: Para títulos principais de páginas (HomePage, RegistrarScreen). titleMedium / titleLarge: Para títulos de cards e seções. bodyLarge / bodyMedium: Para textos descritivos e parágrafos. Iconografia: O uso de react-native-vector-icons/MaterialIcons reforça a identidade Material Design, com ícones claros e reconhecíveis aplicados em botões, inputs e indicadores de status.
+
+Layout e Estrutura das Páginas O layout das telas é vertical e focado em tarefas, com uma estrutura clara e consistente.
+Telas de Autenticação (Login.js, RegistrarScreen.js):
+
+Layout: Formulário centralizado, utilizando ScrollView para se adaptar a diferentes tamanhos de tela. O layout é limpo, com um cabeçalho, campos de TextInput bem espaçados e botões de ação claros. Interação: O estado de isLoading desabilita os botões e exibe um loading durante a submissão, fornecendo feedback claro sobre a atividade de rede. Tela Principal (HomePage.js):
+
+Layout: Funciona como um portal central. Uma grande Surface contém o logo e uma série de botões que direcionam para as principais funcionalidades. Interação: A lógica condicional (isLoggedIn) adapta a interface, exibindo botões de "Login/Criar Conta" para visitantes e "Carrinho/Histórico/Sair" para usuários autenticados. Tela de Produtos (ProdutosScreen.js):
+
+Layout: O conteúdo principal é uma FlatList que renderiza Cards de produtos, uma abordagem eficiente para listas longas. Cada card é bem estruturado com Card.Cover, Card.Content e Card.Actions. Interação: Esta é a tela mais interativa. Cada card possui um seletor de quantidade (usando IconButton de minus e plus) e um botão "Adicionar" que reflete a quantidade selecionada. Um Alert customizado oferece ao usuário a opção de continuar comprando ou ir para o carrinho. Tela de Histórico (HistoricoPedidos.js):
+
+Layout: Similar à tela de produtos, usa uma FlatList para exibir os pedidos passados em Surfaces individuais. A informação é organizada de forma clara: ID, data, status (com ícone) e total. Interação: Um botão "Ver Detalhes" em cada card aciona um Alert simples para mostrar mais informações, uma solução rápida sem a necessidade de navegar para outra tela. Tela do Carrinho (CarrinhoCompras.js):
+
+Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para listas que não são excessivamente longas. A tela é dividida em três partes claras: a lista de itens, a seção de total e os botões de ação final. Interação: O usuário pode remover itens individualmente. O botão "Finalizar Compra" fica desabilitado se o carrinho estiver vazio ou durante o processamento, prevenindo ações indesejadas. 3. Fluxo de Usuário e Interações Navegação: O fluxo é gerenciado pelo @react-navigation/native. A navegação é explícita, baseada em botões que levam o usuário de uma tela para outra (ex: Home -> Produtos -> Carrinho). Feedback ao Usuário: Alertas: O Alert.alert é usado de forma eficaz para confirmar ações (item adicionado ao carrinho), notificar sucesso (pedido finalizado) ou exibir erros. Estados de Carregamento e Erro: Todas as telas que buscam dados da API (fetchProdutos, fetchPedidos) implementam uma lógica de três estados: isLoading (mostra ActivityIndicator), error (mostra mensagem e botão "Tentar Novamente") e sucesso (mostra a lista de dados). Isso torna a aplicação robusta e transparente para o usuário. Componente Reutilizável (Container): A presença de um componente Container sugere uma boa prática de encapsular o layout de base, garantindo que todas as telas compartilhem uma estrutura e preenchimento consistentes.
 
 ### Wireframes
 
