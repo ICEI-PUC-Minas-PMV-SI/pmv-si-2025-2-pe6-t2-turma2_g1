@@ -49,7 +49,6 @@ Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para l
 * Ambiente de Desenvolvimento (IDE) : Visual Studio Code
 * Infraestrutura e Hospedagem: Kubernetes, Google Kubernetes Engine (GKE), Google Cloud Platform
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
 
 ## Considerações de Segurança
 
