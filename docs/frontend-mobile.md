@@ -82,7 +82,9 @@ O espaçamento e o layout seguem as diretrizes do Material Design, garantindo um
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+
+<img width="1806" height="805" alt="image" src="https://github.com/user-attachments/assets/d984523a-1efa-4dff-95ec-b2e1c1e19e2b" />
+
 
 ## Tecnologias Utilizadas
 
