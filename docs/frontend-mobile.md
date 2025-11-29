@@ -47,7 +47,39 @@ Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para l
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A segurança é um dos pilares fundamentais da nossa aplicação, tanto para proteger os dados dos usuários quanto para garantir a integridade das transações realizadas na plataforma. A seguir estão as principais práticas e mecanismos implementados:
+
+---
+
+### Autenticação e Autorização
+
+- Utilização de **JWT (JSON Web Tokens)** para manter sessões de usuários com validade controlada e expiração.
+- Tokens são armazenados com segurança no **AsyncStorage** no mobile, evitando exposições acidentais.
+
+---
+
+###  Proteção de Dados
+
+- Dados sensíveis como senhas **nunca são armazenados diretamente**.
+- Utiliza-se **hashing seguro (ex: bcrypt)** no backend quando necessário.
+- Comunicação entre cliente e servidor é feita exclusivamente via **HTTPS**, garantindo confidencialidade no transporte.
+
+---
+
+###  Boas Práticas de API
+
+- Rotas protegidas exigem **verificação do JWT**.
+- Validação de dados de entrada para evitar **injeções de código**.
+
+---
+
+###  Segurança de Dependências
+
+- Bibliotecas são mantidas **atualizadas**.
+- Ferramentas como **npm audit** e **Dependabot** são utilizadas para identificar vulnerabilidades conhecidas.
+
+---
+
 
 ## Implantação
 
