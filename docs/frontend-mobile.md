@@ -80,13 +80,31 @@ A segurança é um dos pilares fundamentais da nossa aplicação, tanto para pro
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+1. Requisitos e Ferramentas
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+* Acesso: Conta Google Cloud (GKE e Artifact Registry) e conta Expo.dev.
+
+* Local: Docker, gcloud CLI e kubectl instalados.
+
+2. Configuração do Ambiente
+
+* Backend: Configure as variáveis de ambiente (como MONGO_URL) utilizando Secrets e ConfigMaps no Kubernetes.
+
+* Frontend: Aponte a API_URL no projeto React Native para o IP externo/Load Balancer do serviço no GKE.
+
+3. Processo de Deploy
+
+Backend (GKE):
+
+Gere a imagem Docker do Node.js e envie para o Google Artifact Registry (docker push).
+
+Atualize o cluster rodando os manifestos Kubernetes (kubectl apply -f k8s/).
+
+Frontend (Expo):
+
+Para atualizações de código: execute atualização no código.
+
+4. Validação Verifique se os Pods estão com status Running (kubectl get pods) e teste o fluxo de login/dados no aplicativo via Expo Go conectando-se ao endpoint do GKE.
 
 ## Testes
 
