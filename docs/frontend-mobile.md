@@ -43,6 +43,12 @@ Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para l
 
 ## Tecnologias Utilizadas
 
+* Frontend: React.js (web) e React Native (mobile)
+* Backend: Node.js com Express
+* Banco de Dados: Mongo DB
+* Ambiente de Desenvolvimento (IDE) : Visual Studio Code
+* Infraestrutura e Hospedagem: Kubernetes, Google Kubernetes Engine (GKE), Google Cloud Platform
+
 [Lista das tecnologias principais que serão utilizadas no projeto.]
 
 ## Considerações de Segurança
