@@ -82,7 +82,9 @@ O espaçamento e o layout seguem as diretrizes do Material Design, garantindo um
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+
+<img width="1806" height="805" alt="image" src="https://github.com/user-attachments/assets/d984523a-1efa-4dff-95ec-b2e1c1e19e2b" />
+
 
 ## Tecnologias Utilizadas
 
@@ -164,35 +166,40 @@ Os testes foram documentados na apresentação de slides de PowerPoint, disponí
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- [Referencia tecnica projeto no expo.dev Prof Kleber](https://snack.expo.dev/@profklebersouza/mf-fuel-manager-sqlite)
+- [Docs React](https://pt-br.react.dev/)
+- [Docs React](https://reactnative.dev/docs/intro-react)
+- [Microfundamento: Desenvolvimento de Aplicações Móveis](https://pucminas.instructure.com/courses/155666)
+- [reactnavigation.org](https://reactnavigation.org/docs/getting-started/)
 
 # Planejamento
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
-
-### Semana 1
-
-Atualizado em: 21/04/2024
+#### Ambiente Expo dev (Mobile)
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Rafael        | Estrutura mobile | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Vitoria        |  HomePage.js   | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Ian        | App.js | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Helberth        | Produto.js e Registro.js | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Sophia        | Login.js | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Nathan        | Carrinho.js e HistoricoPedidos.js | 03/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Rafael        | Video apresentação do mobile | 28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Rafael        | Testes    |24/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |                 |
 
-#### Semana 2
+#### Documentação
 
-Atualizado em: 21/04/2024
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Helberth        | Front end movel e Projeto da interface | 28/11/2025    | 30/11/2025 | ✔️    | 28/11/2025      |
+| Nathan        | Tecnologias utilizadas | 28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Vitoria        |  Consi. Segurança   | 28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Ian        | Wirefrimes e Design visual | 28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Sophia        | Fluxo de dados | 28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |
+| Rafael        | Testes    |28/11/2025     | 30/11/2025 | ✔️    | 28/11/2025      |                 |
 
 Legenda:
 - ✔️: terminado
