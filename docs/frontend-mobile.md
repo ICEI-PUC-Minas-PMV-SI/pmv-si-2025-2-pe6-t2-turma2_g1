@@ -33,10 +33,10 @@ Layout: Utiliza uma ScrollView com .map() para renderizar os itens, ideal para l
 
 ![Tela Inicial](../docs/TelaInicial.png)
 ![Catalogo de Produtos](../docs/CatalogoDeProdutos.png)
-![Login](../docs/Login.png)
+![Login](../docs/Loginmobile.png)
 ![Register](../docs/Register.png)
-![Carrinho de Compras](../docs/CarrinhoDeCompras.png)
-![Historico de Pedidos](../docs/HistoricoDePedidos.png)
+![Carrinho de Compras](../docs/CarrinhoDeComprasmobile.png)
+![Historico de Pedidos](../docs/HistoricoDePedidosmobile.png)
 
 
 ### Design Visual
