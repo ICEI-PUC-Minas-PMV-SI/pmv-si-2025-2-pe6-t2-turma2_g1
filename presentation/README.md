@@ -7,5 +7,5 @@
 
 🎥 **Vídeo da Demonstração**
 
-[👉 Assistir no Google Drive](https://drive.google.com/file/d/1x0VOC77v814OjPHWjBIHYUsKMfDTPK2P/view?usp=drive_link)  (necessário ter uma conta google para acessar o video)
+[👉 Assistir no Google Drive](https://drive.google.com/file/d/1x0VOC77v814OjPHWjBIHYUsKMfDTPK2P/view?usp=drive_link)  (necessário ter uma conta google e clicar e "fazer login" para acessar o video)
 
